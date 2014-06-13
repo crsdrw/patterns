@@ -3,6 +3,7 @@
 #include "PatternsTest/MyAssert.h"
 #include "PatternsTest/MyLogger.h"
 
+
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace PatternsTest

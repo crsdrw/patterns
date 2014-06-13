@@ -99,6 +99,11 @@
     </ClCompile>
     <ClCompile Include="StrategyTest.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PatternsLib\PatternsLib.vcxproj">
+      <Project>{9b33b5f6-21e4-4a1c-abe6-7dded2fe4fc9}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
