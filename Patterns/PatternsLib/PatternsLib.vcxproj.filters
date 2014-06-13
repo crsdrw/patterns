@@ -39,6 +39,12 @@
     <ClInclude Include="Squeak.h">
       <Filter>Strategy</Filter>
     </ClInclude>
+    <ClInclude Include="ModelDuck.h">
+      <Filter>Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="FlyRocketPowered.h">
+      <Filter>Strategy</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MyString.cpp">

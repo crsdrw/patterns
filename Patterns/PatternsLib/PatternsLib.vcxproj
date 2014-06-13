@@ -83,8 +83,10 @@
     <ClInclude Include="Duck.h" />
     <ClInclude Include="FlyBehaviour.h" />
     <ClInclude Include="FlyNoWay.h" />
+    <ClInclude Include="FlyRocketPowered.h" />
     <ClInclude Include="FlyWithWings.h" />
     <ClInclude Include="MallardDuck.h" />
+    <ClInclude Include="ModelDuck.h" />
     <ClInclude Include="MuteQuack.h" />
     <ClInclude Include="MyString.h" />
     <ClInclude Include="Quack.h" />
