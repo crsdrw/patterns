@@ -5,7 +5,7 @@
 
 namespace Patterns {
   class FlyNoWay : public FlyBehaviour {
-  public:
+   public:
     void fly() override { std::cout << "I can't fly\n"; }
     static FlyBehaviour::Ptr create() { return FlyBehaviour::Ptr(new FlyNoWay()); }
   };

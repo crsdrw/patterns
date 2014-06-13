@@ -5,7 +5,7 @@
 
 namespace Patterns {
   class MuteQuack : public QuackBehaviour {
-  public:
+   public:
     void quack() override { std::cout << "<< Silence >>\n"; }
     static QuackBehaviour::Ptr create() { return QuackBehaviour::Ptr(new MuteQuack()); }
   };

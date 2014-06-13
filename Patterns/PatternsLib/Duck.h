@@ -14,8 +14,8 @@ namespace Patterns {
        : fly_behaviour_(std::move(fly_behaviour))
        , quack_behaviour_(std::move(quack_behaviour)) { }
     virtual void display() const = 0;
-    void performFly() { fly_behaviour_->fly(); };
-    void performQuack() { quack_behaviour_->quack(); };
+    void performFly() { fly_behaviour_->fly(); }
+    void performQuack() { quack_behaviour_->quack(); }
     void swim() { std::cout << "All ducks float, even decoys!\n"; }
     void setFlyBehaviour(FlyBehaviour::Ptr fly_behaviour) {
       fly_behaviour_ = std::move(fly_behaviour);

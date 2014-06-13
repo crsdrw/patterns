@@ -7,6 +7,6 @@ namespace Patterns {
    public:
     typedef std::unique_ptr<QuackBehaviour> Ptr;
     virtual void quack() = 0;
-    virtual ~QuackBehaviour() {};
+    virtual ~QuackBehaviour() {}
   };
 }  // namespace Patterns
