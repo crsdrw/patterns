@@ -45,6 +45,15 @@
     <ClInclude Include="FlyRocketPowered.h">
       <Filter>Strategy</Filter>
     </ClInclude>
+    <ClInclude Include="RedheadDuck.h">
+      <Filter>Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="RubberDuck.h">
+      <Filter>Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="DecoyDuck.h">
+      <Filter>Strategy</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MyString.cpp">

@@ -4,12 +4,12 @@
 #include <iostream>
 
 namespace Patterns {
-  class MallardDuck : public Duck {
-   public: 
-    MallardDuck() {
+  class RedheadDuck : public Duck {
+  public:
+    RedheadDuck() {
       setFlyBehaviour(FlyWithWings::create());
       setQuackBehaviour(Quack::create());
     }
-    void display() const override { std::cout << "I'm a real Mallard Duck\n"; }
+    void display() const override { std::cout << "I'm a real Redhead Duck\n"; }
   };
 }  // namespace Patterns

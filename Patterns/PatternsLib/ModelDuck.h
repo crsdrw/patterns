@@ -6,7 +6,10 @@
 namespace Patterns {
   class ModelDuck : public Duck {
    public:
-    ModelDuck() : Duck(FlyNoWay::create(), Quack::create()) {}
+    ModelDuck() {
+      setFlyBehaviour(FlyNoWay::create());
+      setQuackBehaviour(Quack::create());
+    }
     void display() const override { std::cout << "I'm a model Duck\n"; }
   };
 }  // namespace Patterns
