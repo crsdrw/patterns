@@ -7,6 +7,12 @@
     <Filter Include="Utility">
       <UniqueIdentifier>{97dc51f5-7534-4392-a176-e67cbb026aa7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="SimUDuck">
+      <UniqueIdentifier>{17c96ce4-8b40-4bac-bf97-f1ce662f4275}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Observer">
+      <UniqueIdentifier>{4d23a923-a918-415d-be42-cf837a996fa4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyString.h">
@@ -53,6 +59,33 @@
     </ClInclude>
     <ClInclude Include="DecoyDuck.h">
       <Filter>Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="SimUDuck\Duck.h">
+      <Filter>SimUDuck</Filter>
+    </ClInclude>
+    <ClInclude Include="SimUDuck\MallardDuck.h">
+      <Filter>SimUDuck</Filter>
+    </ClInclude>
+    <ClInclude Include="SimUDuck\RedheadDuck.h">
+      <Filter>SimUDuck</Filter>
+    </ClInclude>
+    <ClInclude Include="SimUDuck\RubberDuck.h">
+      <Filter>SimUDuck</Filter>
+    </ClInclude>
+    <ClInclude Include="SimUDuck\DecoyDuck.h">
+      <Filter>SimUDuck</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer.h">
+      <Filter>Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Subject.h">
+      <Filter>Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="DisplayElement.h">
+      <Filter>Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="WeatherData.h">
+      <Filter>Observer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

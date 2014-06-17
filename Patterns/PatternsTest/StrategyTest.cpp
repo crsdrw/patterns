@@ -9,6 +9,10 @@
 #include "PatternsLib/DecoyDuck.h"
 #include "PatternsLib/RubberDuck.h"
 #include "PatternsLib/FlyRocketPowered.h"
+#include "PatternsLib/SimUDuck/MallardDuck.h"
+#include "PatternsLib/SimUDuck/RedheadDuck.h"
+#include "PatternsLib/SimUDuck/RubberDuck.h"
+#include "PatternsLib/SimUDuck/DecoyDuck.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -129,5 +133,38 @@ namespace PatternsTest
       Assert::AreEqual(expectedRocketPoweredModelFly, stdOutCatcher.read());
     }
 
+    TEST_METHOD(SimUDuckTest)
+    {
+      MyStdOutCatcher stdOutCatcher;
+      AntiPatterns::MallardDuck mallard;
+      mallard.display();
+      Assert::AreEqual(std::string("Looks like a mallard\n"), stdOutCatcher.read());
+      mallard.fly();
+      Assert::AreEqual(std::string("Fly\n"), stdOutCatcher.read());
+      mallard.swim();
+      Assert::AreEqual(std::string("All ducks float, even decoys!\n"), stdOutCatcher.read());
+      mallard.quack();
+      Assert::AreEqual(std::string("Quack\n"), stdOutCatcher.read());
+
+      AntiPatterns::RedheadDuck redhead;
+      redhead.display();
+      Assert::AreEqual(std::string("Looks like a redhead\n"), stdOutCatcher.read());
+
+      AntiPatterns::RubberDuck rubberDuck;
+      rubberDuck.display();
+      Assert::AreEqual(std::string("Looks like a rubber duck\n"), stdOutCatcher.read());
+      rubberDuck.quack();
+      Assert::AreEqual(std::string("Squeak\n"), stdOutCatcher.read());
+      rubberDuck.fly();
+      Assert::AreEqual(std::string("I can't fly\n"), stdOutCatcher.read());
+
+      AntiPatterns::DecoyDuck decoyDuck;
+      decoyDuck.display();
+      Assert::AreEqual(std::string("Looks like a decoy duck\n"), stdOutCatcher.read());
+      decoyDuck.quack();
+      Assert::AreEqual(std::string("<< Silence >>\n"), stdOutCatcher.read());
+      decoyDuck.fly();
+      Assert::AreEqual(std::string("I can't fly\n"), stdOutCatcher.read());
+    }
 	};
 }

@@ -81,6 +81,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DecoyDuck.h" />
+    <ClInclude Include="DisplayElement.h" />
     <ClInclude Include="Duck.h" />
     <ClInclude Include="FlyBehaviour.h" />
     <ClInclude Include="FlyNoWay.h" />
@@ -90,11 +91,19 @@
     <ClInclude Include="ModelDuck.h" />
     <ClInclude Include="MuteQuack.h" />
     <ClInclude Include="MyString.h" />
+    <ClInclude Include="Observer.h" />
     <ClInclude Include="Quack.h" />
     <ClInclude Include="QuackBehaviour.h" />
     <ClInclude Include="RedheadDuck.h" />
     <ClInclude Include="RubberDuck.h" />
+    <ClInclude Include="SimUDuck\DecoyDuck.h" />
+    <ClInclude Include="SimUDuck\Duck.h" />
+    <ClInclude Include="SimUDuck\MallardDuck.h" />
+    <ClInclude Include="SimUDuck\RedheadDuck.h" />
+    <ClInclude Include="SimUDuck\RubberDuck.h" />
     <ClInclude Include="Squeak.h" />
+    <ClInclude Include="Subject.h" />
+    <ClInclude Include="WeatherData.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
