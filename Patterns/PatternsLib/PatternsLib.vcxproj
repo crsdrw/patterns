@@ -80,6 +80,7 @@
     <ClCompile Include="MyString.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CurrentConditionsDisplay.h" />
     <ClInclude Include="DecoyDuck.h" />
     <ClInclude Include="DisplayElement.h" />
     <ClInclude Include="Duck.h" />
