@@ -87,6 +87,9 @@
     <ClInclude Include="WeatherData.h">
       <Filter>Observer</Filter>
     </ClInclude>
+    <ClInclude Include="CurrentConditionsDisplay.h">
+      <Filter>Observer</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MyString.cpp">
