@@ -1,14 +1,17 @@
 #pragma once
+#include <unordered_set>
 
 namespace Patterns {
 
   class Observer;
 
   class Subject {
+  private:
+    std::unordered_set<Observer *> observers_;
   public:
-    virtual void registerObserver(Observer* o) = 0;
-    virtual void removeObserver(Observer* o) = 0;
-    virtual void notifyObservers() const = 0;
+    void registerObserver(Observer* o);
+    void removeObserver(Observer* o);
+    void notifyObservers() const;
   };
 
 }

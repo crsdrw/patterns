@@ -5,24 +5,12 @@
 #include <unordered_set>
 
 namespace Patterns {
-
   class WeatherData : public Subject {
   private:
-    std::unordered_set<Observer *> observers_;
-    float temperature_;
-    float humidity_;
-    float pressure_;
+    float temperature_{0.0f};
+    float humidity_{0.0f};
+    float pressure_{0.0f};
   public:
-    void registerObserver(Observer* o) {
-      observers_.insert(o);
-    }
-    void removeObserver(Observer* o) {
-      observers_.erase(o);
-    }
-    void notifyObservers() const override {
-      for (auto observer : observers_)
-        observer->update(temperature_, humidity_, pressure_);
-    }
     void measurementsChanged() {
       notifyObservers();
     }
@@ -32,5 +20,8 @@ namespace Patterns {
       pressure_ = pressure;
       measurementsChanged();
     }
+    float getTemperature() const { return temperature_; }
+    float getHumidity() const { return humidity_; }
+    float getPressure() const { return pressure_; }
   };
 }  // namespace Patterns
