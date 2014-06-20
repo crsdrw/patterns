@@ -13,13 +13,13 @@ namespace Patterns {
     std::weak_ptr<WeatherData> weather_data_;
 
   public:
-    CurrentConditionsDisplay(std::shared_ptr<WeatherData> weather_data) : weather_data_(weather_data) {
-      if (weather_data) weather_data->registerObserver(shared_from_this());
+    CurrentConditionsDisplay(std::shared_ptr<WeatherData> weather_data) : Observer(weather_data), weather_data_(weather_data) {
     }
     void notify() override {
-      if (weather_data_) {
-        temperature_ = weather_data_->getTemperature();
-        humidity_ = weather_data_->getHumidity();
+      auto weather_data = weather_data_.lock();
+      if (weather_data) {
+        temperature_ = weather_data->getTemperature();
+        humidity_ = weather_data->getHumidity();
         display();
       }
     }

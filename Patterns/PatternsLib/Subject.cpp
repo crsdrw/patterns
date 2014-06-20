@@ -12,8 +12,11 @@ namespace Patterns {
     observers_.erase(o);
   }
   void Subject::notifyObservers() const {
-    for (auto observer : observers_)
-      if (observer) observer->notify();
+    for (auto& o : observers_) {
+      std::shared_ptr<Observer> observer = o.lock();
+      if (observer) 
+        observer->notify();
+    }
   }
 
 }  // namespace Patterns
