@@ -1,5 +1,5 @@
 #pragma once
-#include <unordered_set>
+#include <set>
 
 namespace Patterns {
 
@@ -7,7 +7,8 @@ namespace Patterns {
 
   class Subject {
   private:
-    std::unordered_set<Observer *> observers_;
+    // Choosen std::set because iterators are not invalidated by insertions
+    std::set<Observer *> observers_;
   public:
     void registerObserver(Observer* o);
     void removeObserver(Observer* o);

@@ -4,7 +4,7 @@
 namespace Patterns {
 
   void Subject::registerObserver(Observer* o) {
-    observers_.insert(o);
+    if (o) observers_.insert(o);
   }
   void Subject::removeObserver(Observer* o) {
     observers_.erase(o);
