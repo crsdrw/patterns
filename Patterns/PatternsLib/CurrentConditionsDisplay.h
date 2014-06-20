@@ -10,11 +10,11 @@ namespace Patterns {
   private:
     float temperature_{0.0f};
     float humidity_{0.0f};
-    WeatherData* weather_data_;
+    std::weak_ptr<WeatherData> weather_data_;
 
   public:
-    CurrentConditionsDisplay(WeatherData* weather_data) : weather_data_(weather_data) {
-      if (weather_data) weather_data_->registerObserver(this);
+    CurrentConditionsDisplay(std::shared_ptr<WeatherData> weather_data) : weather_data_(weather_data) {
+      if (weather_data) weather_data->registerObserver(shared_from_this());
     }
     void notify() override {
       if (weather_data_) {

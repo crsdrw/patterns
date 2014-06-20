@@ -3,10 +3,12 @@
 
 namespace Patterns {
 
-  void Subject::registerObserver(Observer* o) {
+  Subject::~Subject() { }
+
+  void Subject::registerObserver(std::shared_ptr<Observer> o) {
     if (o) observers_.insert(o);
   }
-  void Subject::removeObserver(Observer* o) {
+  void Subject::removeObserver(std::shared_ptr<Observer> o) {
     observers_.erase(o);
   }
   void Subject::notifyObservers() const {

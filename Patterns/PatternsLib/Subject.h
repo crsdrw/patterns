@@ -1,5 +1,6 @@
 #pragma once
 #include <set>
+#include <memory>
 
 namespace Patterns {
 
@@ -8,11 +9,12 @@ namespace Patterns {
   class Subject {
   private:
     // Choosen std::set because iterators are not invalidated by insertions
-    std::set<Observer *> observers_;
+    std::set<std::weak_ptr<Observer>> observers_;
   public:
-    void registerObserver(Observer* o);
-    void removeObserver(Observer* o);
+    void registerObserver(std::shared_ptr<Observer> o);
+    void removeObserver(std::shared_ptr<Observer> o);
     void notifyObservers() const;
+    virtual ~Subject();
   };
 
 }
