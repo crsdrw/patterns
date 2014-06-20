@@ -1,27 +1,31 @@
 #pragma once
 
-#include "PatternsLib/Subject.h"
 #include "PatternsLib/Observer.h"
 #include "PatternsLib/DisplayElement.h"
+#include "PatternsLib/WeatherData.h"
 #include <iostream>
 
 namespace Patterns {
   class CurrentConditionsDisplay : public Observer, public DisplayElement {
   private:
-    float temperature;
-    float humidity;
-    Subject *weather_data;
+    float temperature_{0.0f};
+    float humidity_{0.0f};
+    WeatherData* weather_data_;
+
   public:
-    CurrentConditionsDisplay(Subject *weather_data_subject) : weather_data(weather_data_subject) {
-      if (weather_data) weather_data->registerObserver(this);
+    CurrentConditionsDisplay(WeatherData* weather_data) : weather_data_(weather_data) {
+      if (weather_data) weather_data_->registerObserver(this);
     }
-    void update(float temp, float hum, float /*press*/) override {
-      temperature = temp;
-      humidity = hum;
-      display();
+    void notify() override {
+      if (weather_data_) {
+        temperature_ = weather_data_->getTemperature();
+        humidity_ = weather_data_->getHumidity();
+        display();
+      }
     }
     void display() override {
-      std::cout << "Current conditions: " << temperature << "C degrees and " << humidity << "% humidity\n";
+      std::cout << "Current conditions: " << temperature_ 
+        << "C degrees and " << humidity_ << "% humidity\n";
     }
   };
-}
+}  // namespace Patterns

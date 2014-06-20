@@ -1,14 +1,18 @@
 #pragma once
+#include <set>
 
 namespace Patterns {
 
   class Observer;
 
   class Subject {
+  private:
+    // Choosen std::set because iterators are not invalidated by insertions
+    std::set<Observer *> observers_;
   public:
-    virtual void registerObserver(Observer* o) = 0;
-    virtual void removeObserver(Observer* o) = 0;
-    virtual void notifyObservers() const = 0;
+    void registerObserver(Observer* o);
+    void removeObserver(Observer* o);
+    void notifyObservers() const;
   };
 
 }
