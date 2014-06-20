@@ -12,7 +12,7 @@ namespace Patterns {
   public:
     void registerObserver(std::shared_ptr<Observer> o);
     void removeObserver(std::shared_ptr<Observer> o);
-    void notifyObservers() const;
+    void notifyObservers();
     virtual ~Subject();
   };
 
