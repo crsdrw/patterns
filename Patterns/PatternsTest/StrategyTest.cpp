@@ -1,7 +1,5 @@
 #include "stdafx.h"
 #include "CppUnitTest.h"
-#include "PatternsTest/MyAssert.h"
-#include "PatternsTest/MyLogger.h"
 #include "PatternsTest/MyStdOutCatcher.h"
 #include "PatternsLib/MallardDuck.h"
 #include "PatternsLib/RedheadDuck.h"
