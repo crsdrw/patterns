@@ -5,10 +5,10 @@ namespace Patterns {
 
   Subject::~Subject() { }
 
-  void Subject::registerObserver(std::shared_ptr<Observer> o) {
+  void Subject::registerObserver(Ptr o) {
     observers_.insert(o);
   }
-  void Subject::removeObserver(std::shared_ptr<Observer> o) {
+  void Subject::removeObserver(Ptr o) {
     observers_.erase(o);
   }
   void Subject::notifyObservers() {
