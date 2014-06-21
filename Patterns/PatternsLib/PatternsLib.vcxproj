@@ -80,7 +80,6 @@
     <ClCompile Include="CurrentConditionsDisplay.cpp" />
     <ClCompile Include="ForecastDisplay.cpp" />
     <ClCompile Include="MyString.cpp" />
-    <ClCompile Include="Observer.cpp" />
     <ClCompile Include="Subject.cpp" />
   </ItemGroup>
   <ItemGroup>

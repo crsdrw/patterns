@@ -1,16 +1,14 @@
 #pragma once
 
 #include "PatternsLib/Subject.h"
-#include "PatternsLib/Observer.h"
-#include <unordered_set>
 
 namespace Patterns {
   class WeatherData : public Subject {
-  private:
+   private:
     float temperature_{0.0f};
     float humidity_{0.0f};
     float pressure_{0.0f};
-  public:
+   public:
     void measurementsChanged() {
       notifyObservers();
     }

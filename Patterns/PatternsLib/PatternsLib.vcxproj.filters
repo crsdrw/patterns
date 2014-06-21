@@ -98,9 +98,6 @@
     <ClCompile Include="Subject.cpp">
       <Filter>Observer</Filter>
     </ClCompile>
-    <ClCompile Include="Observer.cpp">
-      <Filter>Observer</Filter>
-    </ClCompile>
     <ClCompile Include="CurrentConditionsDisplay.cpp">
       <Filter>Observer</Filter>
     </ClCompile>

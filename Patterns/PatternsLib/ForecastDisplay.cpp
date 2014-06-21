@@ -1,6 +1,11 @@
 #include "PatternsLib/ForecastDisplay.h"
 #include "PatternsLib/WeatherData.h"
 #include <iostream>
+#include <cmath>
+
+namespace {
+  inline bool areAlmostEqual(float x, float y, float eps) { return std::abs(x - y) <= eps * std::abs(x); }
+}
 
 namespace Patterns {
   void
@@ -16,29 +21,11 @@ namespace Patterns {
   void
   ForecastDisplay::display() {
     std::cout << "Forecast: ";
-    if (current_pressure_ > last_pressure_) {
-      std::cout << "Improving weather on the way!";
-    }
-    else if (current_pressure_ == last_pressure_) {
-      System.out.println("More of the same");
-    }
-    else if (currentPressure < lastPressure) {
-      System.out.println("Watch out for cooler, rainy weather");
-    }
+    if (current_pressure_ > last_pressure_)
+      std::cout << "Improving weather on the way!\n";
+    else if (areAlmostEqual(current_pressure_, last_pressure_, 1e-20f))
+      std::cout << "More of the same\n";
+    else if (current_pressure_ < last_pressure_)
+      std::cout << "Watch out for cooler, rainy weather\n";
   }
-
-  void
-  ForecastDisplay::setWeatherData(std::shared_ptr<WeatherData> data) {
-    weather_data_ = data;
-    observe(data);
-    notify();
-  }
-
-  // Static methods
-  std::shared_ptr<ForecastDisplay>
-    ForecastDisplay::create(std::shared_ptr<WeatherData> data) {
-    auto display = std::make_shared<CurrentConditionsDisplay>();
-    display->setWeatherData(data);
-    return display;
-  }
-}
+}  // namespace Patterns
