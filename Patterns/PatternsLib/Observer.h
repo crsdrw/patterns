@@ -4,11 +4,10 @@
 namespace Patterns {
   class Subject;
 
-  class Observer : private std::enable_shared_from_this<Observer> {
+  class Observer : std::enable_shared_from_this<Observer> {
    public:
-     Observer(std::shared_ptr<Subject> subject);
     virtual ~Observer();
     virtual void notify() = 0;
+    void observe(std::shared_ptr<Subject> subject);
   };
-
 }

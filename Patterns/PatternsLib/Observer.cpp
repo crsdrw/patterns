@@ -2,9 +2,10 @@
 #include "PatternsLib/Subject.h"
 
 namespace Patterns {
-  Observer::Observer(std::shared_ptr<Subject> subject) {
+  Observer::~Observer() {}
+
+  void Observer::observe(std::shared_ptr<Subject> subject) {
     if (subject)
       subject->registerObserver(shared_from_this());
   }
-  Observer::~Observer() {}
-}
+}  // namespace Patterns

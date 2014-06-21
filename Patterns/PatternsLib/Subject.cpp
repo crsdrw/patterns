@@ -12,14 +12,15 @@ namespace Patterns {
     observers_.erase(o);
   }
   void Subject::notifyObservers() {
-    for (auto iter = observers_.begin(); iter != observers_.end(); ++iter) {
-      std::shared_ptr<Observer> observer = iter->lock();
-      if (observer)
+    auto iter = observers_.begin();
+    while (iter != observers_.end()) {
+      auto observer = iter->lock();
+      if (observer) {
         observer->notify();
-      else
+        ++iter;
+      } else {
         iter = observers_.erase(iter);
+      }
     }
-
   }
-
 }  // namespace Patterns

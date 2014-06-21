@@ -81,13 +81,13 @@
     <ClInclude Include="Subject.h">
       <Filter>Observer</Filter>
     </ClInclude>
-    <ClInclude Include="DisplayElement.h">
-      <Filter>Observer</Filter>
-    </ClInclude>
     <ClInclude Include="WeatherData.h">
       <Filter>Observer</Filter>
     </ClInclude>
     <ClInclude Include="CurrentConditionsDisplay.h">
+      <Filter>Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="ForecastDisplay.h">
       <Filter>Observer</Filter>
     </ClInclude>
   </ItemGroup>
@@ -99,6 +99,12 @@
       <Filter>Observer</Filter>
     </ClCompile>
     <ClCompile Include="Observer.cpp">
+      <Filter>Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="CurrentConditionsDisplay.cpp">
+      <Filter>Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="ForecastDisplay.cpp">
       <Filter>Observer</Filter>
     </ClCompile>
   </ItemGroup>

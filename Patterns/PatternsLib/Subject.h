@@ -6,12 +6,14 @@
 namespace Patterns {
 
   class Subject {
+    typedef std::weak_ptr<Observer> WeakPtr;
+    typedef std::shared_ptr<Observer> Ptr;
   private:
     // Choosen std::set because iterators are not invalidated by insertions
-    std::set<std::weak_ptr<Observer>, std::owner_less<std::weak_ptr<Observer>>> observers_;
+    std::set<WeakPtr, std::owner_less<WeakPtr>> observers_;
   public:
-    void registerObserver(std::shared_ptr<Observer> o);
-    void removeObserver(std::shared_ptr<Observer> o);
+    void registerObserver(Ptr o);
+    void removeObserver(Ptr o);
     void notifyObservers();
     virtual ~Subject();
   };
