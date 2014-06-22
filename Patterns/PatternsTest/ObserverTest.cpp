@@ -150,6 +150,25 @@ namespace PatternsTest
       Assert::AreEqual(1, observer->notify_count_);
     }
 	
+    TEST_METHOD(AddRValueObserver)
+    {
+      auto subject = std::make_shared<TestSubject>();
+      subject->registerObserver(Patterns::makeObserver<TestObserver>(subject));
+      subject->notifyObservers();
+    }
+
+    TEST_METHOD(AddEmptyObserver)
+    {
+      auto subject = std::make_shared<TestSubject>();
+      auto observer = std::make_shared<TestObserver>();
+      subject->registerObserver(observer);
+      Assert::AreEqual(0, observer->notify_count_);
+      Assert::IsTrue(observer->subject_.expired());
+      subject->notifyObservers();
+      Assert::AreEqual(1, observer->notify_count_);
+      Assert::IsTrue(observer->subject_.expired());
+    }
+
 		TEST_METHOD(TestWeatherStation)
 		{
       using Patterns::WeatherData;
