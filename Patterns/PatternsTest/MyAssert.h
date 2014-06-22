@@ -4,7 +4,13 @@
 #include "PatternsLib/MyString.h"
 
 namespace MyAssert {
+
   template<typename T> void AreEqual(const T& expected, const T& actual, const std::string& message = "") {
+    auto wmessage = MyString::widen(message);
+    Microsoft::VisualStudio::CppUnitTestFramework::Assert::AreEqual(expected, actual, wmessage.c_str());
+  }
+
+  inline void AreEqual(const std::string& expected, const std::string& actual, const std::string& message = "") {
     auto wmessage = MyString::widen(message);
     Microsoft::VisualStudio::CppUnitTestFramework::Assert::AreEqual(expected, actual, wmessage.c_str());
   }

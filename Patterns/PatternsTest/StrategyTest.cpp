@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "CppUnitTest.h"
 #include "PatternsTest/MyStdOutCatcher.h"
+#include "PatternsTest/MyAssert.h"
 #include "PatternsLib/MallardDuck.h"
 #include "PatternsLib/RedheadDuck.h"
 #include "PatternsLib/ModelDuck.h"
@@ -27,20 +28,16 @@ namespace PatternsTest
       Patterns::MallardDuck mallard;
     
       mallard.display();
-      std::string expectedMallardDisplay("I'm a real Mallard Duck\n");
-      Assert::AreEqual(expectedMallardDisplay, stdOutCatcher.read());
+      MyAssert::AreEqual("I'm a real Mallard Duck\n", stdOutCatcher.read());
 
       mallard.performFly();
-      std::string expectedMallardFly("I'm flying!!\n");
-      Assert::AreEqual(expectedMallardFly, stdOutCatcher.read());
+      MyAssert::AreEqual("I'm flying!!\n", stdOutCatcher.read());
       
       mallard.performQuack();
-      std::string expectedMallardQuack("Quack\n");
-      Assert::AreEqual(expectedMallardQuack, stdOutCatcher.read());
+      MyAssert::AreEqual("Quack\n", stdOutCatcher.read());
 
       mallard.swim();
-      std::string expectedMallardSwim("All ducks float, even decoys!\n");
-      Assert::AreEqual(expectedMallardSwim, stdOutCatcher.read());
+      MyAssert::AreEqual("All ducks float, even decoys!\n", stdOutCatcher.read());
     }
 
     TEST_METHOD(TestReadheadDuck)
@@ -49,16 +46,13 @@ namespace PatternsTest
       Patterns::RedheadDuck redhead;
 
       redhead.display();
-      std::string expectedReadheadDisplay("I'm a real Redhead Duck\n");
-      Assert::AreEqual(expectedReadheadDisplay, stdOutCatcher.read());
+      MyAssert::AreEqual("I'm a real Redhead Duck\n", stdOutCatcher.read());
 
       redhead.performFly();
-      std::string expectedReadheadFly("I'm flying!!\n");
-      Assert::AreEqual(expectedReadheadFly, stdOutCatcher.read());
+      MyAssert::AreEqual("I'm flying!!\n", stdOutCatcher.read());
 
       redhead.performQuack();
-      std::string expectedReadheadQuack("Quack\n");
-      Assert::AreEqual(expectedReadheadQuack, stdOutCatcher.read());
+      MyAssert::AreEqual("Quack\n", stdOutCatcher.read());
     }
 
     TEST_METHOD(TestModelDuck)
@@ -67,16 +61,13 @@ namespace PatternsTest
       Patterns::ModelDuck modelDuck;
 
       modelDuck.display();
-      std::string expectedModelDisplay("I'm a model Duck\n");
-      Assert::AreEqual(expectedModelDisplay, stdOutCatcher.read());
+      MyAssert::AreEqual("I'm a model Duck\n", stdOutCatcher.read());
 
       modelDuck.performFly();
-      std::string expectedModelFly("I can't fly\n");
-      Assert::AreEqual(expectedModelFly, stdOutCatcher.read());
+      MyAssert::AreEqual("I can't fly\n", stdOutCatcher.read());
 
       modelDuck.performQuack();
-      std::string expectedModelQuack("Quack\n");
-      Assert::AreEqual(expectedModelQuack, stdOutCatcher.read());
+      MyAssert::AreEqual("Quack\n", stdOutCatcher.read());
     }
 
     TEST_METHOD(TestRubberDuck)
@@ -85,16 +76,13 @@ namespace PatternsTest
       Patterns::RubberDuck rubberDuck;
 
       rubberDuck.display();
-      std::string expectedModelDisplay("I'm a rubber Duck\n");
-      Assert::AreEqual(expectedModelDisplay, stdOutCatcher.read());
+      MyAssert::AreEqual("I'm a rubber Duck\n", stdOutCatcher.read());
 
       rubberDuck.performFly();
-      std::string expectedModelFly("I can't fly\n");
-      Assert::AreEqual(expectedModelFly, stdOutCatcher.read());
+      MyAssert::AreEqual("I can't fly\n", stdOutCatcher.read());
 
       rubberDuck.performQuack();
-      std::string expectedModelQuack("Squeak\n");
-      Assert::AreEqual(expectedModelQuack, stdOutCatcher.read());
+      MyAssert::AreEqual("Squeak\n", stdOutCatcher.read());
     }
 
     TEST_METHOD(TestDecoyDuck)
@@ -103,16 +91,13 @@ namespace PatternsTest
       Patterns::DecoyDuck decoyDuck;
 
       decoyDuck.display();
-      std::string expectedModelDisplay("I'm a decoy Duck\n");
-      Assert::AreEqual(expectedModelDisplay, stdOutCatcher.read());
+      MyAssert::AreEqual("I'm a decoy Duck\n", stdOutCatcher.read());
 
       decoyDuck.performFly();
-      std::string expectedModelFly("I can't fly\n");
-      Assert::AreEqual(expectedModelFly, stdOutCatcher.read());
+      MyAssert::AreEqual("I can't fly\n", stdOutCatcher.read());
 
       decoyDuck.performQuack();
-      std::string expectedModelQuack("<< Silence >>\n");
-      Assert::AreEqual(expectedModelQuack, stdOutCatcher.read());
+      MyAssert::AreEqual("<< Silence >>\n", stdOutCatcher.read());
     }
 
     TEST_METHOD(TestRocketPoweredModelDuck)
@@ -121,14 +106,12 @@ namespace PatternsTest
       Patterns::ModelDuck modelDuck;
 
       modelDuck.performFly();
-      std::string expectedModelFly("I can't fly\n");
-      Assert::AreEqual(expectedModelFly, stdOutCatcher.read());
+      MyAssert::AreEqual("I can't fly\n", stdOutCatcher.read());
 
       modelDuck.setFlyBehaviour(Patterns::FlyRocketPowered::create());
 
       modelDuck.performFly();
-      std::string expectedRocketPoweredModelFly("I'm flying with a rocket!\n");
-      Assert::AreEqual(expectedRocketPoweredModelFly, stdOutCatcher.read());
+      MyAssert::AreEqual("I'm flying with a rocket!\n", stdOutCatcher.read());
     }
 
     TEST_METHOD(SimUDuckTest)
@@ -136,33 +119,33 @@ namespace PatternsTest
       MyStdOutCatcher stdOutCatcher;
       AntiPatterns::MallardDuck mallard;
       mallard.display();
-      Assert::AreEqual(std::string("Looks like a mallard\n"), stdOutCatcher.read());
+      MyAssert::AreEqual("Looks like a mallard\n", stdOutCatcher.read());
       mallard.fly();
-      Assert::AreEqual(std::string("Fly\n"), stdOutCatcher.read());
+      MyAssert::AreEqual("Fly\n", stdOutCatcher.read());
       mallard.swim();
-      Assert::AreEqual(std::string("All ducks float, even decoys!\n"), stdOutCatcher.read());
+      MyAssert::AreEqual("All ducks float, even decoys!\n", stdOutCatcher.read());
       mallard.quack();
-      Assert::AreEqual(std::string("Quack\n"), stdOutCatcher.read());
+      MyAssert::AreEqual("Quack\n", stdOutCatcher.read());
 
       AntiPatterns::RedheadDuck redhead;
       redhead.display();
-      Assert::AreEqual(std::string("Looks like a redhead\n"), stdOutCatcher.read());
+      MyAssert::AreEqual("Looks like a redhead\n", stdOutCatcher.read());
 
       AntiPatterns::RubberDuck rubberDuck;
       rubberDuck.display();
-      Assert::AreEqual(std::string("Looks like a rubber duck\n"), stdOutCatcher.read());
+      MyAssert::AreEqual("Looks like a rubber duck\n", stdOutCatcher.read());
       rubberDuck.quack();
-      Assert::AreEqual(std::string("Squeak\n"), stdOutCatcher.read());
+      MyAssert::AreEqual("Squeak\n", stdOutCatcher.read());
       rubberDuck.fly();
-      Assert::AreEqual(std::string("I can't fly\n"), stdOutCatcher.read());
+      MyAssert::AreEqual("I can't fly\n", stdOutCatcher.read());
 
       AntiPatterns::DecoyDuck decoyDuck;
       decoyDuck.display();
-      Assert::AreEqual(std::string("Looks like a decoy duck\n"), stdOutCatcher.read());
+      MyAssert::AreEqual("Looks like a decoy duck\n", stdOutCatcher.read());
       decoyDuck.quack();
-      Assert::AreEqual(std::string("<< Silence >>\n"), stdOutCatcher.read());
+      MyAssert::AreEqual("<< Silence >>\n", stdOutCatcher.read());
       decoyDuck.fly();
-      Assert::AreEqual(std::string("I can't fly\n"), stdOutCatcher.read());
+      MyAssert::AreEqual("I can't fly\n", stdOutCatcher.read());
     }
 	};
 }
