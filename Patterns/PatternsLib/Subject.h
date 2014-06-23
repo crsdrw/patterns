@@ -9,6 +9,8 @@ namespace Patterns {
   private:
     // Choosen std::set because iterators are not invalidated by insertions
     std::set<Observer *> observers_;
+  protected:
+   ~Subject(){}
   public:
     void registerObserver(Observer* o);
     void removeObserver(Observer* o);

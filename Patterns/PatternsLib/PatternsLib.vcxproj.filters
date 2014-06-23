@@ -81,9 +81,6 @@
     <ClInclude Include="Subject.h">
       <Filter>Observer</Filter>
     </ClInclude>
-    <ClInclude Include="DisplayElement.h">
-      <Filter>Observer</Filter>
-    </ClInclude>
     <ClInclude Include="WeatherData.h">
       <Filter>Observer</Filter>
     </ClInclude>
@@ -96,6 +93,9 @@
       <Filter>Utility</Filter>
     </ClCompile>
     <ClCompile Include="Subject.cpp">
+      <Filter>Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="Observer.cpp">
       <Filter>Observer</Filter>
     </ClCompile>
   </ItemGroup>

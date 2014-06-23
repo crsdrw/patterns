@@ -78,12 +78,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="MyString.cpp" />
+    <ClCompile Include="Observer.cpp" />
     <ClCompile Include="Subject.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CurrentConditionsDisplay.h" />
     <ClInclude Include="DecoyDuck.h" />
-    <ClInclude Include="DisplayElement.h" />
     <ClInclude Include="Duck.h" />
     <ClInclude Include="FlyBehaviour.h" />
     <ClInclude Include="FlyNoWay.h" />
