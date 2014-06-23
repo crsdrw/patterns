@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PatternsTest", "PatternsTest\PatternsTest.vcxproj", "{294A9298-29E7-498C-B52C-AE1036ACFC7F}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -11,6 +11,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PatternsLib", "PatternsLib\PatternsLib.vcxproj", "{9B33B5F6-21E4-4A1C-ABE6-7DDED2FE4FC9}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PatternsConsole", "PatternsConsole\PatternsConsole.vcxproj", "{76776EC4-299A-4266-9988-BFF889DF9DA9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ObserverStandalone", "ObserverStandalone\ObserverStandalone.vcxproj", "{D8304676-75F8-41E1-86EB-E32813904FF3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,6 +32,10 @@ Global
 		{76776EC4-299A-4266-9988-BFF889DF9DA9}.Debug|Win32.Build.0 = Debug|Win32
 		{76776EC4-299A-4266-9988-BFF889DF9DA9}.Release|Win32.ActiveCfg = Release|Win32
 		{76776EC4-299A-4266-9988-BFF889DF9DA9}.Release|Win32.Build.0 = Release|Win32
+		{D8304676-75F8-41E1-86EB-E32813904FF3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D8304676-75F8-41E1-86EB-E32813904FF3}.Debug|Win32.Build.0 = Debug|Win32
+		{D8304676-75F8-41E1-86EB-E32813904FF3}.Release|Win32.ActiveCfg = Release|Win32
+		{D8304676-75F8-41E1-86EB-E32813904FF3}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
