@@ -12,6 +12,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PatternsLib", "PatternsLib\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PatternsConsole", "PatternsConsole\PatternsConsole.vcxproj", "{76776EC4-299A-4266-9988-BFF889DF9DA9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ObserverStandalone", "ObserverStandalone\ObserverStandalone.vcxproj", "{A26013AF-A776-48D9-A4FA-73D519D9DF79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -30,6 +32,10 @@ Global
 		{76776EC4-299A-4266-9988-BFF889DF9DA9}.Debug|Win32.Build.0 = Debug|Win32
 		{76776EC4-299A-4266-9988-BFF889DF9DA9}.Release|Win32.ActiveCfg = Release|Win32
 		{76776EC4-299A-4266-9988-BFF889DF9DA9}.Release|Win32.Build.0 = Release|Win32
+		{A26013AF-A776-48D9-A4FA-73D519D9DF79}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A26013AF-A776-48D9-A4FA-73D519D9DF79}.Debug|Win32.Build.0 = Debug|Win32
+		{A26013AF-A776-48D9-A4FA-73D519D9DF79}.Release|Win32.ActiveCfg = Release|Win32
+		{A26013AF-A776-48D9-A4FA-73D519D9DF79}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
