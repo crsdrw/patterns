@@ -83,15 +83,22 @@
     <ClCompile Include="Subject.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Beverage.h" />
+    <ClInclude Include="CondimentDecorator.h" />
     <ClInclude Include="CurrentConditionsDisplay.h" />
+    <ClInclude Include="DarkRoast.h" />
+    <ClInclude Include="Decaf.h" />
     <ClInclude Include="DecoyDuck.h" />
     <ClInclude Include="Duck.h" />
+    <ClInclude Include="Espresso.h" />
     <ClInclude Include="FlyBehaviour.h" />
     <ClInclude Include="FlyNoWay.h" />
     <ClInclude Include="FlyRocketPowered.h" />
     <ClInclude Include="FlyWithWings.h" />
     <ClInclude Include="ForecastDisplay.h" />
+    <ClInclude Include="HouseBlend.h" />
     <ClInclude Include="MallardDuck.h" />
+    <ClInclude Include="Mocha.h" />
     <ClInclude Include="ModelDuck.h" />
     <ClInclude Include="MuteQuack.h" />
     <ClInclude Include="MyString.h" />
@@ -108,6 +115,7 @@
     <ClInclude Include="Squeak.h" />
     <ClInclude Include="Subject.h" />
     <ClInclude Include="WeatherData.h" />
+    <ClInclude Include="Whip.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

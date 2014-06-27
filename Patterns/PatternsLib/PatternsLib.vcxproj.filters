@@ -13,6 +13,9 @@
     <Filter Include="Observer">
       <UniqueIdentifier>{4d23a923-a918-415d-be42-cf837a996fa4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Decorator">
+      <UniqueIdentifier>{03565e54-f561-4287-8b89-c97a6657bec2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyString.h">
@@ -89,6 +92,30 @@
     </ClInclude>
     <ClInclude Include="ForecastDisplay.h">
       <Filter>Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Beverage.h">
+      <Filter>Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="CondimentDecorator.h">
+      <Filter>Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Espresso.h">
+      <Filter>Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="HouseBlend.h">
+      <Filter>Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Mocha.h">
+      <Filter>Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="DarkRoast.h">
+      <Filter>Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Decaf.h">
+      <Filter>Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Whip.h">
+      <Filter>Decorator</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
