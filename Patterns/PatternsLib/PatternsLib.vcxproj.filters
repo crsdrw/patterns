@@ -16,6 +16,9 @@
     <Filter Include="Decorator">
       <UniqueIdentifier>{03565e54-f561-4287-8b89-c97a6657bec2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="SimpleFactory">
+      <UniqueIdentifier>{2e72c66c-6f9a-41c2-aad3-3197f2f8f8b6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyString.h">
@@ -117,6 +120,21 @@
     <ClInclude Include="Whip.h">
       <Filter>Decorator</Filter>
     </ClInclude>
+    <ClInclude Include="Pizza.h">
+      <Filter>SimpleFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="SimplePizzaFactory.h">
+      <Filter>SimpleFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="CheesePizza.h">
+      <Filter>SimpleFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="PepperoniPizza.h">
+      <Filter>SimpleFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="PizzaStoreV0.h">
+      <Filter>SimpleFactory</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MyString.cpp">
@@ -130,6 +148,12 @@
     </ClCompile>
     <ClCompile Include="ForecastDisplay.cpp">
       <Filter>Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="SimplePizzaFactory.cpp">
+      <Filter>SimpleFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="Pizza.cpp">
+      <Filter>SimpleFactory</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

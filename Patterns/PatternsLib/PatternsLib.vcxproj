@@ -80,10 +80,13 @@
     <ClCompile Include="CurrentConditionsDisplay.cpp" />
     <ClCompile Include="ForecastDisplay.cpp" />
     <ClCompile Include="MyString.cpp" />
+    <ClCompile Include="Pizza.cpp" />
+    <ClCompile Include="SimplePizzaFactory.cpp" />
     <ClCompile Include="Subject.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Beverage.h" />
+    <ClInclude Include="CheesePizza.h" />
     <ClInclude Include="CondimentDecorator.h" />
     <ClInclude Include="CurrentConditionsDisplay.h" />
     <ClInclude Include="DarkRoast.h" />
@@ -103,10 +106,14 @@
     <ClInclude Include="MuteQuack.h" />
     <ClInclude Include="MyString.h" />
     <ClInclude Include="Observer.h" />
+    <ClInclude Include="PepperoniPizza.h" />
+    <ClInclude Include="Pizza.h" />
+    <ClInclude Include="PizzaStoreV0.h" />
     <ClInclude Include="Quack.h" />
     <ClInclude Include="QuackBehaviour.h" />
     <ClInclude Include="RedheadDuck.h" />
     <ClInclude Include="RubberDuck.h" />
+    <ClInclude Include="SimplePizzaFactory.h" />
     <ClInclude Include="SimUDuck\DecoyDuck.h" />
     <ClInclude Include="SimUDuck\Duck.h" />
     <ClInclude Include="SimUDuck\MallardDuck.h" />

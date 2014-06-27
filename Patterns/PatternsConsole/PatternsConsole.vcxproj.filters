@@ -27,6 +27,9 @@
     <ClCompile Include="MakeCoffee.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MakePizza.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PlayWithDucks.h">
@@ -36,6 +39,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MakeCoffee.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MakePizza.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
