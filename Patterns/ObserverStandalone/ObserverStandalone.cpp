@@ -11,24 +11,21 @@ namespace Ptn {
 
   class Subject {
    private:
-    typedef std::weak_ptr<Observer> WeakPtr;
-    typedef std::shared_ptr<Observer> Ptr;
-
-    // Choosen std::set because iterators are not invalidated by insertions
-    std::set<WeakPtr, std::owner_less<WeakPtr>> observers_;
+    typedef std::weak_ptr<Observer> ObserverWeakPtr;
+    std::set<ObserverWeakPtr, std::owner_less<ObserverWeakPtr>> observers_;
    public:
-    void registerObserver(Ptr o);
-    void removeObserver(Ptr o);
+    void registerObserver(std::shared_ptr<Observer> o);
+    void removeObserver(std::shared_ptr<Observer> o);
     void notifyObservers();
     virtual ~Subject();
   };
 
   Subject::~Subject() { }
 
-  void Subject::registerObserver(Ptr o) {
+  void Subject::registerObserver(std::shared_ptr<Observer> o) {
     observers_.insert(o);
   }
-  void Subject::removeObserver(Ptr o) {
+  void Subject::removeObserver(std::shared_ptr<Observer> o) {
     observers_.erase(o);
   }
   void Subject::notifyObservers() {
@@ -73,10 +70,10 @@ namespace Ptn {
     void notify() override;
     void display();
     void setSubject(std::shared_ptr<WeatherData> data) { weather_data_ = data; }
+    static std::shared_ptr<CurrentConditionsDisplay> create(std::shared_ptr<WeatherData> data);
   };
 
-  void
-  CurrentConditionsDisplay::notify() {
+  void CurrentConditionsDisplay::notify() {
     auto weather_data = weather_data_.lock();
     if (weather_data) {
       temperature_ = weather_data->getTemperature();
@@ -84,25 +81,24 @@ namespace Ptn {
       display();
     }
   }
-  void
-    CurrentConditionsDisplay::display() {
+  void CurrentConditionsDisplay::display() {
     std::cout << "Current conditions: " << temperature_
       << "C degrees and " << humidity_ << "% humidity\n";
   }
 
-  template<typename O, typename S, typename... Args> std::shared_ptr<O>
-    makeObserver(std::shared_ptr<S> subject, Args&&... args) {
-      auto observer = std::make_shared<O>(args...);
-      observer->setSubject(subject);
-      if (subject) subject->registerObserver(observer);
-      return observer;
-    }
-
+  std::shared_ptr<CurrentConditionsDisplay> 
+  CurrentConditionsDisplay::create(std::shared_ptr<WeatherData> data) {
+    auto observer = std::make_shared<CurrentConditionsDisplay>();
+    observer->setSubject(data);
+    if (data)
+      data->registerObserver(observer);
+    return observer;
+  }
 }  // namespace Ptn
 
 int main() {
   auto weather_data = std::make_shared<Ptn::WeatherData>();
-  auto current_display = Ptn::makeObserver<Ptn::CurrentConditionsDisplay>(weather_data);
+  auto current_display = Ptn::CurrentConditionsDisplay::create(weather_data);
   weather_data->setMeasurements(30.0f, 65.0f, 30.4f);
   weather_data->setMeasurements(29.0f, 70.0f, 29.2f);
   weather_data->setMeasurements(17.0f, 90.0f, 29.2f);
