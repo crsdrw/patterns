@@ -19,6 +19,9 @@
     <Filter Include="SimpleFactory">
       <UniqueIdentifier>{2e72c66c-6f9a-41c2-aad3-3197f2f8f8b6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="FactoryMethod">
+      <UniqueIdentifier>{1403d18a-387b-4749-9b43-4b8bcb7b8d43}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyString.h">
@@ -135,6 +138,27 @@
     <ClInclude Include="PizzaStoreV0.h">
       <Filter>SimpleFactory</Filter>
     </ClInclude>
+    <ClInclude Include="PizzaStore.h">
+      <Filter>FactoryMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="NYStyleCheesePizza.h">
+      <Filter>FactoryMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="ChicagoStyleCheesePizza.h">
+      <Filter>FactoryMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="NYStylePepperoniPizza.h">
+      <Filter>FactoryMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="ChicagoStylePepperoniPizza.h">
+      <Filter>FactoryMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="NYPizzaStore.h">
+      <Filter>FactoryMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="ChicagoPizzaStore.h">
+      <Filter>FactoryMethod</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MyString.cpp">
@@ -154,6 +178,15 @@
     </ClCompile>
     <ClCompile Include="Pizza.cpp">
       <Filter>SimpleFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="PizzaStore.cpp">
+      <Filter>FactoryMethod</Filter>
+    </ClCompile>
+    <ClCompile Include="NYPizzaStore.cpp">
+      <Filter>FactoryMethod</Filter>
+    </ClCompile>
+    <ClCompile Include="ChicagoPizzaStore.cpp">
+      <Filter>FactoryMethod</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
