@@ -19,7 +19,7 @@
     <Filter Include="SimpleFactory">
       <UniqueIdentifier>{2e72c66c-6f9a-41c2-aad3-3197f2f8f8b6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="FactoryMethod">
+    <Filter Include="Factory">
       <UniqueIdentifier>{1403d18a-387b-4749-9b43-4b8bcb7b8d43}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -139,25 +139,31 @@
       <Filter>SimpleFactory</Filter>
     </ClInclude>
     <ClInclude Include="PizzaStore.h">
-      <Filter>FactoryMethod</Filter>
+      <Filter>Factory</Filter>
     </ClInclude>
     <ClInclude Include="NYStyleCheesePizza.h">
-      <Filter>FactoryMethod</Filter>
+      <Filter>Factory</Filter>
     </ClInclude>
     <ClInclude Include="ChicagoStyleCheesePizza.h">
-      <Filter>FactoryMethod</Filter>
+      <Filter>Factory</Filter>
     </ClInclude>
     <ClInclude Include="NYStylePepperoniPizza.h">
-      <Filter>FactoryMethod</Filter>
+      <Filter>Factory</Filter>
     </ClInclude>
     <ClInclude Include="ChicagoStylePepperoniPizza.h">
-      <Filter>FactoryMethod</Filter>
+      <Filter>Factory</Filter>
     </ClInclude>
     <ClInclude Include="NYPizzaStore.h">
-      <Filter>FactoryMethod</Filter>
+      <Filter>Factory</Filter>
     </ClInclude>
     <ClInclude Include="ChicagoPizzaStore.h">
-      <Filter>FactoryMethod</Filter>
+      <Filter>Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="PizzaIngredientFactory.h">
+      <Filter>Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="NYPizzaIngredientFactory.h">
+      <Filter>Factory</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -180,13 +186,13 @@
       <Filter>SimpleFactory</Filter>
     </ClCompile>
     <ClCompile Include="PizzaStore.cpp">
-      <Filter>FactoryMethod</Filter>
+      <Filter>Factory</Filter>
     </ClCompile>
     <ClCompile Include="NYPizzaStore.cpp">
-      <Filter>FactoryMethod</Filter>
+      <Filter>Factory</Filter>
     </ClCompile>
     <ClCompile Include="ChicagoPizzaStore.cpp">
-      <Filter>FactoryMethod</Filter>
+      <Filter>Factory</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -111,12 +111,14 @@
     <ClInclude Include="ModelDuck.h" />
     <ClInclude Include="MuteQuack.h" />
     <ClInclude Include="MyString.h" />
+    <ClInclude Include="NYPizzaIngredientFactory.h" />
     <ClInclude Include="NYStyleCheesePizza.h" />
     <ClInclude Include="NYStylePepperoniPizza.h" />
     <ClInclude Include="NYPizzaStore.h" />
     <ClInclude Include="Observer.h" />
     <ClInclude Include="PepperoniPizza.h" />
     <ClInclude Include="Pizza.h" />
+    <ClInclude Include="PizzaIngredientFactory.h" />
     <ClInclude Include="PizzaStore.h" />
     <ClInclude Include="PizzaStoreV0.h" />
     <ClInclude Include="Quack.h" />
