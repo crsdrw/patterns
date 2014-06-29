@@ -3,13 +3,7 @@
 
 namespace Patterns {
 
-  void Pizza::prepare() {
-    std::cout << "Preparing " << name_ << std::endl;
-    std::cout << "Tossing dough....\n";
-    std::cout << "Adding sauce...\n";
-    std::cout << "Adding toppings:\n";
-    for (auto& topping : toppings_)
-      std::cout << "    " << topping << std::endl;
+  Pizza::Pizza(std::string name) : name_(std::move(name)) {
   }
 
   void Pizza::bake() {

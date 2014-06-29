@@ -1,6 +1,6 @@
 #pragma once
 #include "PatternsLib/SimplePizzaFactory.h"
-#include "PatternsLib/Pizza.h"
+#include "PatternsLib/PizzaV0.h"
 #include <memory>
 
 namespace Patterns {
@@ -10,8 +10,8 @@ namespace Patterns {
     const SimplePizzaFactory* factory_;
   public:
     PizzaStoreV0(const SimplePizzaFactory* factory) : factory_(factory) {}
-    std::unique_ptr<Pizza> orderPizza(std::string type) {
-      std::unique_ptr<Pizza> pizza = factory_->createPizza(type);
+    std::unique_ptr<PizzaV0> orderPizza(std::string type) {
+      std::unique_ptr<PizzaV0> pizza = factory_->createPizza(type);
       if (pizza) {
         pizza->prepare();
         pizza->bake();

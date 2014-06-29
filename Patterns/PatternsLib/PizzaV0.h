@@ -1,24 +1,20 @@
 #pragma once
 #include <string>
 #include <vector>
-#include <memory>
 
 namespace Patterns {
 
-  class Dough;
-  class Sauce;
-  class Veggie;
-
-  class Pizza {
+  class PizzaV0 {
   private:
     std::string name_;
-    std::unique_ptr<Dough> dough_;
-    std::unique_ptr<Sauce> sauce_;
-    std::vector<std::unique_ptr<Veggie>> toppings_;
+    std::string dough_;
+    std::string sauce_;
+    std::vector<std::string> toppings_;
   public:
-    virtual ~Pizza() {}
-    Pizza(std::string name);
-    virtual void prepare() = 0;
+    virtual ~PizzaV0() {}
+    PizzaV0(std::string name, std::string dough, std::string sauce)
+      : name_(std::move(name)), dough_(std::move(dough)), sauce_(std::move(sauce)) {}
+    virtual void prepare();
     virtual void bake();
     virtual void cut();
     virtual void box();

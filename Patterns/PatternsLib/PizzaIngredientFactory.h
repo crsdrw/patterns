@@ -10,6 +10,7 @@ namespace Patterns {
   class Veggie;
 
   class PizzaIngredientFactory {
+  public:
     typedef std::vector<std::unique_ptr<Veggie>> Veggies;
     std::unique_ptr<Dough> createDough();
     std::unique_ptr<Sauce> createSauce();

@@ -84,12 +84,14 @@
     <ClCompile Include="NYPizzaStore.cpp" />
     <ClCompile Include="Pizza.cpp" />
     <ClCompile Include="PizzaStore.cpp" />
+    <ClCompile Include="PizzaV0.cpp" />
     <ClCompile Include="SimplePizzaFactory.cpp" />
     <ClCompile Include="Subject.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Beverage.h" />
     <ClInclude Include="CheesePizza.h" />
+    <ClInclude Include="CheesePizzaV0.h" />
     <ClInclude Include="ChicagoStyleCheesePizza.h" />
     <ClInclude Include="ChicagoStylePepperoniPizza.h" />
     <ClInclude Include="ChicagoPizzaStore.h" />
@@ -98,6 +100,7 @@
     <ClInclude Include="DarkRoast.h" />
     <ClInclude Include="Decaf.h" />
     <ClInclude Include="DecoyDuck.h" />
+    <ClInclude Include="Dough.h" />
     <ClInclude Include="Duck.h" />
     <ClInclude Include="Espresso.h" />
     <ClInclude Include="FlyBehaviour.h" />
@@ -116,15 +119,17 @@
     <ClInclude Include="NYStylePepperoniPizza.h" />
     <ClInclude Include="NYPizzaStore.h" />
     <ClInclude Include="Observer.h" />
-    <ClInclude Include="PepperoniPizza.h" />
+    <ClInclude Include="PepperoniPizzaV0.h" />
     <ClInclude Include="Pizza.h" />
     <ClInclude Include="PizzaIngredientFactory.h" />
     <ClInclude Include="PizzaStore.h" />
     <ClInclude Include="PizzaStoreV0.h" />
+    <ClInclude Include="PizzaV0.h" />
     <ClInclude Include="Quack.h" />
     <ClInclude Include="QuackBehaviour.h" />
     <ClInclude Include="RedheadDuck.h" />
     <ClInclude Include="RubberDuck.h" />
+    <ClInclude Include="Sauce.h" />
     <ClInclude Include="SimplePizzaFactory.h" />
     <ClInclude Include="SimUDuck\DecoyDuck.h" />
     <ClInclude Include="SimUDuck\Duck.h" />

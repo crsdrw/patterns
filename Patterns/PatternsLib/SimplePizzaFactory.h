@@ -3,11 +3,11 @@
 #include <string>
 
 namespace Patterns {
-  class Pizza;
+  class PizzaV0;
 
   class SimplePizzaFactory {
   public:
-    std::unique_ptr<Pizza> createPizza(std::string type) const;
+    std::unique_ptr<PizzaV0> createPizza(std::string type) const;
   };
 
 }  // namespace Patterns

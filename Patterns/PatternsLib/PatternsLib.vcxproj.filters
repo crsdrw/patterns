@@ -123,16 +123,7 @@
     <ClInclude Include="Whip.h">
       <Filter>Decorator</Filter>
     </ClInclude>
-    <ClInclude Include="Pizza.h">
-      <Filter>SimpleFactory</Filter>
-    </ClInclude>
     <ClInclude Include="SimplePizzaFactory.h">
-      <Filter>SimpleFactory</Filter>
-    </ClInclude>
-    <ClInclude Include="CheesePizza.h">
-      <Filter>SimpleFactory</Filter>
-    </ClInclude>
-    <ClInclude Include="PepperoniPizza.h">
       <Filter>SimpleFactory</Filter>
     </ClInclude>
     <ClInclude Include="PizzaStoreV0.h">
@@ -165,6 +156,24 @@
     <ClInclude Include="NYPizzaIngredientFactory.h">
       <Filter>Factory</Filter>
     </ClInclude>
+    <ClInclude Include="Pizza.h">
+      <Filter>Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="PizzaV0.h">
+      <Filter>SimpleFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="CheesePizzaV0.h">
+      <Filter>SimpleFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="PepperoniPizzaV0.h">
+      <Filter>SimpleFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="Dough.h">
+      <Filter>Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="Sauce.h">
+      <Filter>Factory</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MyString.cpp">
@@ -182,9 +191,6 @@
     <ClCompile Include="SimplePizzaFactory.cpp">
       <Filter>SimpleFactory</Filter>
     </ClCompile>
-    <ClCompile Include="Pizza.cpp">
-      <Filter>SimpleFactory</Filter>
-    </ClCompile>
     <ClCompile Include="PizzaStore.cpp">
       <Filter>Factory</Filter>
     </ClCompile>
@@ -193,6 +199,12 @@
     </ClCompile>
     <ClCompile Include="ChicagoPizzaStore.cpp">
       <Filter>Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="Pizza.cpp">
+      <Filter>Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="PizzaV0.cpp">
+      <Filter>SimpleFactory</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
