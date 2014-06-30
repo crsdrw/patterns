@@ -1,13 +1,12 @@
 #pragma once
 #include <string>
 
-
 namespace Patterns {
 
-  class Dough {
+  class Cheese {
   public:
     virtual std::string toString() = 0;
-    virtual ~Dough(){}
+    virtual ~Cheese(){}
   };
 
 }  // namespace Patterns

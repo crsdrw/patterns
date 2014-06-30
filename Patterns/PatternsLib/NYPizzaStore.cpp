@@ -1,16 +1,18 @@
 #include "PatternsLib/NYPizzaStore.h"
-#include "PatternsLib/NYStyleCheesePizza.h"
-#include "PatternsLib/NYStylePepperoniPizza.h"
+#include "PatternsLib/NYPizzaIngredientFactory.h"
+#include "PatternsLib/CheesePizza.h"
+#include "PatternsLib/ClamPizza.h"
 #include <memory>
 
 namespace Patterns {
 
   std::unique_ptr<Pizza>
   NYPizzaStore::createPizza(std::string type) {
+    auto ingredient_factory = std::make_unique<NYPizzaIngredientFactory>();
     if (type == "cheese")
-      return std::make_unique<NYStyleCheesePizza>();
-    else if (type == "pepperoni")
-      return std::make_unique<NYStylePepperoniPizza>();
+      return std::make_unique<CheesePizza>("New York Style Cheese Pizza", ingredient_factory);
+    else if (type == "clam")
+      return std::make_unique<ClamPizza>("New York Style Clam Pizza", ingredient_factory);
     return nullptr;
   }
 

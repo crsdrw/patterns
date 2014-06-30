@@ -4,10 +4,10 @@
 
 namespace Patterns {
 
-  class Dough {
+  class Clam {
   public:
     virtual std::string toString() = 0;
-    virtual ~Dough(){}
+    virtual ~Clam(){}
   };
 
 }  // namespace Patterns
