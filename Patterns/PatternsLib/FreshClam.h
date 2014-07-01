@@ -5,7 +5,7 @@ namespace Patterns {
 
   class FreshClam : public Clam {
   public:
-    std::string toString() override { return "Fresh Clam"; }
+    std::string toString() const override { return "Fresh Clam"; }
   };
 
 }  // namespace Patterns

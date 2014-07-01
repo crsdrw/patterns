@@ -5,7 +5,7 @@ namespace Patterns {
 
   class Onion : public Veggie {
   public:
-    std::string toString() override { return "Onion"; }
+    std::string toString() const override { return "Onion"; }
   };
 
 }  // namespace Patterns
