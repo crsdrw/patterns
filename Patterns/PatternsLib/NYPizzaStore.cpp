@@ -3,9 +3,6 @@
 #include "PatternsLib/CheesePizza.h"
 #include "PatternsLib/ClamPizza.h"
 
-// TODO - why do I need this include here?!!
-//#include "PatternsLib/Dough.h"
-
 #include <memory>
 
 namespace Patterns {

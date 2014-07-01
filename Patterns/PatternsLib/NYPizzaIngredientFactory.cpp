@@ -30,7 +30,10 @@ namespace Patterns {
 
   std::vector<std::unique_ptr<Veggie>>
   NYPizzaIngredientFactory::createVeggies() {
-    return std::vector<std::unique_ptr<Veggie>>{ std::make_unique<Garlic>(), std::make_unique<Onion>() };
+    std::vector<std::unique_ptr<Veggie>> veggies;
+    veggies.emplace_back(std::make_unique<Garlic>());
+    veggies.emplace_back(std::make_unique<Onion>());
+    return veggies;
   }
 
 }  // namespace Patterns

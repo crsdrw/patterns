@@ -24,8 +24,10 @@ namespace Patterns {
 
     auto pizza = ny_store.orderPizza("cheese");
     std::cout << "Ethan ordered a " << pizza->getName() << std::endl;
+    std::cout << pizza->toString() << std::endl;
 
     pizza = chicago_store.orderPizza("cheese");
     std::cout << "Joel ordered a " << pizza->getName() << std::endl;
+    std::cout << pizza->toString() << std::endl;
   }
 }  // namspace Patterns

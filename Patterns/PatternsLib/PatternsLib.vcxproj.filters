@@ -254,5 +254,11 @@
     <ClCompile Include="ChicagoPizzaIngredientFactory.cpp">
       <Filter>Factory</Filter>
     </ClCompile>
+    <ClCompile Include="CheesePizza.cpp">
+      <Filter>Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="ClamPizza.cpp">
+      <Filter>Factory</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -49,7 +49,7 @@ namespace Patterns {
       result.append(veggie->toString());
       separator = ", ";
     }
-    result.append("\n");
+    if (!veggies_.empty()) result.append("\n");
     if(clam_) {
       result.append(clam_->toString());
       result.append("\n");
@@ -63,5 +63,9 @@ namespace Patterns {
 
   void Pizza::setCheese(std::unique_ptr<Cheese> cheese) {
     cheese_ = std::move(cheese);
+  }
+
+  void Pizza::setClam(std::unique_ptr<Clam> clam) {
+    clam_ = std::move(clam);
   }
 }  // namespace Patterns
