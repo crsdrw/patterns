@@ -9,7 +9,7 @@ namespace Patterns {
   class Clam;
   class Veggie;
 
-  class PizzaIngredientFactory {
+  class PizzaIngredientFactory {  // abstract factory
   public:
     virtual ~PizzaIngredientFactory() {}
     virtual std::unique_ptr<Dough> createDough() = 0;
