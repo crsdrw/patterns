@@ -1,4 +1,5 @@
 #include "PatternsLib/Pizza.h"
+#include "PatternsLib/PizzaIngredientFactory.h"
 #include "PatternsLib/Dough.h"
 #include "PatternsLib/Sauce.h"
 #include "PatternsLib/Cheese.h"
@@ -8,7 +9,8 @@
 
 namespace Patterns {
 
-  Pizza::Pizza(std::string name) : name_(std::move(name)) {
+  Pizza::Pizza(std::string name, std::unique_ptr<PizzaIngredientFactory> ingredient_factory) 
+    : name_(std::move(name)), ingredient_factory_(std::move(ingredient_factory)) {
   }
 
   Pizza::~Pizza() {}
@@ -29,7 +31,7 @@ namespace Patterns {
     dough_ = std::move(dough);
   }
 
-  std::string Pizza::toString() {
+  std::string Pizza::toString() const {
     std::string result("---- " + name_ + " ----\n");
     if(dough_) {
       result.append(dough_->toString());
@@ -67,5 +69,9 @@ namespace Patterns {
 
   void Pizza::setClam(std::unique_ptr<Clam> clam) {
     clam_ = std::move(clam);
+  }
+
+  PizzaIngredientFactory* Pizza::getIngredientFactory() {
+    return ingredient_factory_.get();
   }
 }  // namespace Patterns
