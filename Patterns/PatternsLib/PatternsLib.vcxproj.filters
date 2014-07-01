@@ -207,13 +207,13 @@
     <ClInclude Include="Mozzarella.h">
       <Filter>Factory</Filter>
     </ClInclude>
-    <ClInclude Include="FrozenClam.h">
-      <Filter>Factory</Filter>
-    </ClInclude>
     <ClInclude Include="BlackOlive.h">
       <Filter>Factory</Filter>
     </ClInclude>
     <ClInclude Include="Spinach.h">
+      <Filter>Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="FrozenClam.h">
       <Filter>Factory</Filter>
     </ClInclude>
   </ItemGroup>

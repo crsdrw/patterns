@@ -12,11 +12,11 @@ namespace Patterns {
   class PizzaIngredientFactory {
   public:
     virtual ~PizzaIngredientFactory() {}
-    virtual std::unique_ptr<Dough> createDough();
-    virtual std::unique_ptr<Sauce> createSauce();
-    virtual std::unique_ptr<Cheese> createCheese();
-    virtual std::unique_ptr<Clam> createClam();
-    virtual std::vector<std::unique_ptr<Veggie>> createVeggies();
+    virtual std::unique_ptr<Dough> createDough() = 0;
+    virtual std::unique_ptr<Sauce> createSauce() = 0;
+    virtual std::unique_ptr<Cheese> createCheese() = 0;
+    virtual std::unique_ptr<Clam> createClam() = 0;
+    virtual std::vector<std::unique_ptr<Veggie>> createVeggies() = 0;
   };
 
 }  // namespace Patterns

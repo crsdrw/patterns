@@ -3,6 +3,10 @@
 
 namespace Patterns {
 
+  PizzaStore::~PizzaStore() {
+
+  }
+
   std::unique_ptr<Pizza> PizzaStore::orderPizza(std::string type) {
     auto pizza = createPizza(type);
     if (pizza) {

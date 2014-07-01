@@ -8,6 +8,7 @@ namespace Patterns {
 
   class PizzaStore {
    protected:
+    virtual ~PizzaStore();
     virtual std::unique_ptr<Pizza> createPizza(std::string type) = 0;  // astract factory method
    public:
     std::unique_ptr<Pizza> orderPizza(std::string type);
