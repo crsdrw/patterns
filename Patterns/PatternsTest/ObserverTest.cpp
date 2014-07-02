@@ -1,9 +1,9 @@
 #include "stdafx.h"
 #include "CppUnitTest.h"
-#include "PatternsLib/Observer.h"
-#include "PatternsLib/WeatherData.h"
-#include "PatternsLib/CurrentConditionsDisplay.h"
-#include "PatternsLib/Subject.h"
+#include "PatternsLib/Observer/Observer.h"
+#include "PatternsLib/Observer/WeatherData.h"
+#include "PatternsLib/Observer/CurrentConditionsDisplay.h"
+#include "PatternsLib/Observer/Subject.h"
 #include "PatternsTest/MyStdOutCatcher.h"
 #include "PatternsTest/MyAssert.h"
 #include <vector>

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "PatternsLib/QuackBehaviour.h"
+#include "PatternsLib/Strategy/QuackBehaviour.h"
 #include <iostream>
 
 namespace Patterns {

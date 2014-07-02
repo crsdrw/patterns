@@ -1,7 +1,7 @@
 #include "PatternsConsole/PlayWithDucks.h"
-#include "PatternsLib/MallardDuck.h"
-#include "PatternsLib/ModelDuck.h"
-#include "PatternsLib/FlyRocketPowered.h"
+#include "PatternsLib/Strategy/MallardDuck.h"
+#include "PatternsLib/Strategy/ModelDuck.h"
+#include "PatternsLib/Strategy/FlyRocketPowered.h"
 
 
 namespace Patterns {

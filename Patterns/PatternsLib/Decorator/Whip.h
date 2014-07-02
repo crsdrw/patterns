@@ -1,6 +1,6 @@
 #pragma once
 
-#include "PatternsLib/CondimentDecorator.h"
+#include "PatternsLib/Decorator/CondimentDecorator.h"
 #include <memory>
 
 namespace Patterns {

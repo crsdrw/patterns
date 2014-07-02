@@ -1,7 +1,7 @@
 #include "PatternsConsole/DisplayWeather.h"
-#include "PatternsLib/WeatherData.h"
-#include "PatternsLib/CurrentConditionsDisplay.h"
-#include "PatternsLib/ForecastDisplay.h"
+#include "PatternsLib/Observer/WeatherData.h"
+#include "PatternsLib/Observer/CurrentConditionsDisplay.h"
+#include "PatternsLib/Observer/ForecastDisplay.h"
 
 namespace Patterns {
   void displayWeather() {
