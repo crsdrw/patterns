@@ -1,5 +1,5 @@
-#include "PatternsLib/PizzaStore.h"
-#include "PatternsLib/Pizza.h"
+#include "PatternsLib/Pizza/PizzaStore.h"
+#include "PatternsLib/Pizza/Pizza.h"
 
 namespace Patterns {
 

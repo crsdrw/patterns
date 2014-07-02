@@ -1,4 +1,4 @@
-#include "PatternsLib/Pizza.h"
+#include "PatternsLib/Pizza/Pizza.h"
 #include <iostream>
 
 namespace Patterns {

@@ -1,6 +1,6 @@
-#include "PatternsLib/NYPizzaStore.h"
-#include "PatternsLib/NYStyleCheesePizza.h"
-#include "PatternsLib/NYStylePepperoniPizza.h"
+#include "PatternsLib/Pizza/NYPizzaStore.h"
+#include "PatternsLib/Pizza/NYStyleCheesePizza.h"
+#include "PatternsLib/Pizza/NYStylePepperoniPizza.h"
 #include <memory>
 
 namespace Patterns {

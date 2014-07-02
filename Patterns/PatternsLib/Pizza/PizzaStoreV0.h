@@ -1,6 +1,6 @@
 #pragma once
-#include "PatternsLib/SimplePizzaFactory.h"
-#include "PatternsLib/Pizza.h"
+#include "PatternsLib/Pizza/SimplePizzaFactory.h"
+#include "PatternsLib/Pizza/Pizza.h"
 #include <memory>
 
 namespace Patterns {

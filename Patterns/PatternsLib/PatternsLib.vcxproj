@@ -77,21 +77,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ChicagoPizzaStore.cpp" />
     <ClCompile Include="MyString.cpp" />
-    <ClCompile Include="NYPizzaStore.cpp" />
     <ClCompile Include="Observer\CurrentConditionsDisplay.cpp" />
     <ClCompile Include="Observer\ForecastDisplay.cpp" />
     <ClCompile Include="Observer\Subject.cpp" />
-    <ClCompile Include="Pizza.cpp" />
-    <ClCompile Include="PizzaStore.cpp" />
-    <ClCompile Include="SimplePizzaFactory.cpp" />
+    <ClCompile Include="Pizza\ChicagoPizzaStore.cpp" />
+    <ClCompile Include="Pizza\NYPizzaStore.cpp" />
+    <ClCompile Include="Pizza\Pizza.cpp" />
+    <ClCompile Include="Pizza\PizzaStore.cpp" />
+    <ClCompile Include="Pizza\SimplePizzaFactory.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CheesePizza.h" />
-    <ClInclude Include="ChicagoStyleCheesePizza.h" />
-    <ClInclude Include="ChicagoStylePepperoniPizza.h" />
-    <ClInclude Include="ChicagoPizzaStore.h" />
     <ClInclude Include="Decorator\Beverage.h" />
     <ClInclude Include="Decorator\CondimentDecorator.h" />
     <ClInclude Include="Decorator\DarkRoast.h" />
@@ -101,19 +97,23 @@
     <ClInclude Include="Decorator\Mocha.h" />
     <ClInclude Include="Decorator\Whip.h" />
     <ClInclude Include="MyString.h" />
-    <ClInclude Include="NYStyleCheesePizza.h" />
-    <ClInclude Include="NYStylePepperoniPizza.h" />
-    <ClInclude Include="NYPizzaStore.h" />
     <ClInclude Include="Observer\CurrentConditionsDisplay.h" />
     <ClInclude Include="Observer\ForecastDisplay.h" />
     <ClInclude Include="Observer\Observer.h" />
     <ClInclude Include="Observer\Subject.h" />
     <ClInclude Include="Observer\WeatherData.h" />
-    <ClInclude Include="PepperoniPizza.h" />
-    <ClInclude Include="Pizza.h" />
-    <ClInclude Include="PizzaStore.h" />
-    <ClInclude Include="PizzaStoreV0.h" />
-    <ClInclude Include="SimplePizzaFactory.h" />
+    <ClInclude Include="Pizza\CheesePizza.h" />
+    <ClInclude Include="Pizza\ChicagoPizzaStore.h" />
+    <ClInclude Include="Pizza\ChicagoStyleCheesePizza.h" />
+    <ClInclude Include="Pizza\ChicagoStylePepperoniPizza.h" />
+    <ClInclude Include="Pizza\NYPizzaStore.h" />
+    <ClInclude Include="Pizza\NYStyleCheesePizza.h" />
+    <ClInclude Include="Pizza\NYStylePepperoniPizza.h" />
+    <ClInclude Include="Pizza\PepperoniPizza.h" />
+    <ClInclude Include="Pizza\Pizza.h" />
+    <ClInclude Include="Pizza\PizzaStore.h" />
+    <ClInclude Include="Pizza\PizzaStoreV0.h" />
+    <ClInclude Include="Pizza\SimplePizzaFactory.h" />
     <ClInclude Include="SimUDuck\DecoyDuck.h" />
     <ClInclude Include="SimUDuck\Duck.h" />
     <ClInclude Include="SimUDuck\MallardDuck.h" />
