@@ -19,8 +19,8 @@ namespace Patterns {
     auto pizza2 = pizza_store.orderPizza("pepperoni");
 
     std::cout << "-- Factory Method --\n";
-    auto ny_store = NYPizzaStore{};
-    auto chicago_store = ChicagoPizzaStore{};
+    NYPizzaStore ny_store;
+    ChicagoPizzaStore chicago_store;
 
     auto pizza = ny_store.orderPizza("cheese");
     std::cout << "Ethan ordered a " << pizza->getName() << std::endl;
