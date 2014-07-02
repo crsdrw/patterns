@@ -1,7 +1,7 @@
 #pragma once
 
-#include "PatternsLib/FlyBehaviour.h"
-#include "PatternsLib/QuackBehaviour.h"
+#include "PatternsLib/Strategy/FlyBehaviour.h"
+#include "PatternsLib/Strategy/QuackBehaviour.h"
 #include <iostream>
 
 namespace Patterns {

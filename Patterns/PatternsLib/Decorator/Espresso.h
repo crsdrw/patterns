@@ -1,6 +1,6 @@
 #pragma once
 
-#include "PatternsLib/Beverage.h"
+#include "PatternsLib/Decorator/Beverage.h"
 
 namespace Patterns {
   class Espresso : public Beverage {

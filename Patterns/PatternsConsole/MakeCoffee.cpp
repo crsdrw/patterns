@@ -1,9 +1,9 @@
 #include "PatternsConsole/MakeCoffee.h"
-#include "PatternsLib/Espresso.h"
-#include "PatternsLib/DarkRoast.h"
-#include "PatternsLib/Mocha.h"
-#include "PatternsLib/Whip.h"
-#include "PatternsLib/Beverage.h"
+#include "PatternsLib/Decorator/Espresso.h"
+#include "PatternsLib/Decorator/DarkRoast.h"
+#include "PatternsLib/Decorator/Mocha.h"
+#include "PatternsLib/Decorator/Whip.h"
+#include "PatternsLib/Decorator/Beverage.h"
 
 #include <memory>
 #include <iostream>

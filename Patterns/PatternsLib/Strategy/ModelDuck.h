@@ -1,6 +1,6 @@
-#include "PatternsLib/Duck.h"
-#include "PatternsLib/Quack.h"
-#include "PatternsLib/FlyNoWay.h"
+#include "PatternsLib/Strategy/Duck.h"
+#include "PatternsLib/Strategy/Quack.h"
+#include "PatternsLib/Strategy/FlyNoWay.h"
 #include <iostream>
 
 namespace Patterns {

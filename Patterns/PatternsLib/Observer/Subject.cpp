@@ -1,5 +1,5 @@
-#include "PatternsLib/Subject.h"
-#include "PatternsLib/Observer.h"
+#include "PatternsLib/Observer/Subject.h"
+#include "PatternsLib/Observer/Observer.h"
 
 namespace Patterns {
 

@@ -1,5 +1,5 @@
-#include "PatternsLib/ForecastDisplay.h"
-#include "PatternsLib/WeatherData.h"
+#include "PatternsLib/Observer/ForecastDisplay.h"
+#include "PatternsLib/Observer/WeatherData.h"
 #include <iostream>
 #include <cmath>
 

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "PatternsLib/FlyBehaviour.h"
+#include "PatternsLib/Strategy/FlyBehaviour.h"
 #include <iostream>
 
 namespace Patterns {

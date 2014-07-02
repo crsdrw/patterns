@@ -1,6 +1,6 @@
 #pragma once
 
-#include "PatternsLib/Observer.h"
+#include "PatternsLib/Observer/Observer.h"
 
 namespace Patterns {
   class WeatherData;

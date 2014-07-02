@@ -27,48 +27,6 @@
     <ClInclude Include="MyString.h">
       <Filter>Utility</Filter>
     </ClInclude>
-    <ClInclude Include="MallardDuck.h">
-      <Filter>Strategy</Filter>
-    </ClInclude>
-    <ClInclude Include="Duck.h">
-      <Filter>Strategy</Filter>
-    </ClInclude>
-    <ClInclude Include="FlyBehaviour.h">
-      <Filter>Strategy</Filter>
-    </ClInclude>
-    <ClInclude Include="QuackBehaviour.h">
-      <Filter>Strategy</Filter>
-    </ClInclude>
-    <ClInclude Include="FlyWithWings.h">
-      <Filter>Strategy</Filter>
-    </ClInclude>
-    <ClInclude Include="FlyNoWay.h">
-      <Filter>Strategy</Filter>
-    </ClInclude>
-    <ClInclude Include="Quack.h">
-      <Filter>Strategy</Filter>
-    </ClInclude>
-    <ClInclude Include="MuteQuack.h">
-      <Filter>Strategy</Filter>
-    </ClInclude>
-    <ClInclude Include="Squeak.h">
-      <Filter>Strategy</Filter>
-    </ClInclude>
-    <ClInclude Include="ModelDuck.h">
-      <Filter>Strategy</Filter>
-    </ClInclude>
-    <ClInclude Include="FlyRocketPowered.h">
-      <Filter>Strategy</Filter>
-    </ClInclude>
-    <ClInclude Include="RedheadDuck.h">
-      <Filter>Strategy</Filter>
-    </ClInclude>
-    <ClInclude Include="RubberDuck.h">
-      <Filter>Strategy</Filter>
-    </ClInclude>
-    <ClInclude Include="DecoyDuck.h">
-      <Filter>Strategy</Filter>
-    </ClInclude>
     <ClInclude Include="SimUDuck\Duck.h">
       <Filter>SimUDuck</Filter>
     </ClInclude>
@@ -83,45 +41,6 @@
     </ClInclude>
     <ClInclude Include="SimUDuck\DecoyDuck.h">
       <Filter>SimUDuck</Filter>
-    </ClInclude>
-    <ClInclude Include="Observer.h">
-      <Filter>Observer</Filter>
-    </ClInclude>
-    <ClInclude Include="Subject.h">
-      <Filter>Observer</Filter>
-    </ClInclude>
-    <ClInclude Include="WeatherData.h">
-      <Filter>Observer</Filter>
-    </ClInclude>
-    <ClInclude Include="CurrentConditionsDisplay.h">
-      <Filter>Observer</Filter>
-    </ClInclude>
-    <ClInclude Include="ForecastDisplay.h">
-      <Filter>Observer</Filter>
-    </ClInclude>
-    <ClInclude Include="Beverage.h">
-      <Filter>Decorator</Filter>
-    </ClInclude>
-    <ClInclude Include="CondimentDecorator.h">
-      <Filter>Decorator</Filter>
-    </ClInclude>
-    <ClInclude Include="Espresso.h">
-      <Filter>Decorator</Filter>
-    </ClInclude>
-    <ClInclude Include="HouseBlend.h">
-      <Filter>Decorator</Filter>
-    </ClInclude>
-    <ClInclude Include="Mocha.h">
-      <Filter>Decorator</Filter>
-    </ClInclude>
-    <ClInclude Include="DarkRoast.h">
-      <Filter>Decorator</Filter>
-    </ClInclude>
-    <ClInclude Include="Decaf.h">
-      <Filter>Decorator</Filter>
-    </ClInclude>
-    <ClInclude Include="Whip.h">
-      <Filter>Decorator</Filter>
     </ClInclude>
     <ClInclude Include="SimplePizzaFactory.h">
       <Filter>SimpleFactory</Filter>
@@ -216,19 +135,91 @@
     <ClInclude Include="FrozenClam.h">
       <Filter>Factory</Filter>
     </ClInclude>
+    <ClInclude Include="Observer\CurrentConditionsDisplay.h">
+      <Filter>Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer\ForecastDisplay.h">
+      <Filter>Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer\Observer.h">
+      <Filter>Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer\Subject.h">
+      <Filter>Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer\WeatherData.h">
+      <Filter>Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Strategy\DecoyDuck.h">
+      <Filter>Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="Strategy\Duck.h">
+      <Filter>Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="Strategy\FlyBehaviour.h">
+      <Filter>Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="Strategy\FlyNoWay.h">
+      <Filter>Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="Strategy\FlyRocketPowered.h">
+      <Filter>Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="Strategy\FlyWithWings.h">
+      <Filter>Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="Strategy\MallardDuck.h">
+      <Filter>Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="Strategy\ModelDuck.h">
+      <Filter>Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="Strategy\MuteQuack.h">
+      <Filter>Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="Strategy\Quack.h">
+      <Filter>Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="Strategy\QuackBehaviour.h">
+      <Filter>Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="Strategy\RedheadDuck.h">
+      <Filter>Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="Strategy\RubberDuck.h">
+      <Filter>Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="Strategy\Squeak.h">
+      <Filter>Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="Decorator\Beverage.h">
+      <Filter>Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Decorator\CondimentDecorator.h">
+      <Filter>Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Decorator\DarkRoast.h">
+      <Filter>Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Decorator\Decaf.h">
+      <Filter>Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Decorator\Espresso.h">
+      <Filter>Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Decorator\HouseBlend.h">
+      <Filter>Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Decorator\Mocha.h">
+      <Filter>Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Decorator\Whip.h">
+      <Filter>Decorator</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MyString.cpp">
       <Filter>Utility</Filter>
-    </ClCompile>
-    <ClCompile Include="Subject.cpp">
-      <Filter>Observer</Filter>
-    </ClCompile>
-    <ClCompile Include="CurrentConditionsDisplay.cpp">
-      <Filter>Observer</Filter>
-    </ClCompile>
-    <ClCompile Include="ForecastDisplay.cpp">
-      <Filter>Observer</Filter>
     </ClCompile>
     <ClCompile Include="SimplePizzaFactory.cpp">
       <Filter>SimpleFactory</Filter>
@@ -251,13 +242,22 @@
     <ClCompile Include="NYPizzaIngredientFactory.cpp">
       <Filter>Factory</Filter>
     </ClCompile>
-    <ClCompile Include="ChicagoPizzaIngredientFactory.cpp">
+    <ClCompile Include="ClamPizza.cpp">
       <Filter>Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="Observer\CurrentConditionsDisplay.cpp">
+      <Filter>Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="Observer\ForecastDisplay.cpp">
+      <Filter>Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="Observer\Subject.cpp">
+      <Filter>Observer</Filter>
     </ClCompile>
     <ClCompile Include="CheesePizza.cpp">
       <Filter>Factory</Filter>
     </ClCompile>
-    <ClCompile Include="ClamPizza.cpp">
+    <ClCompile Include="ChicagoPizzaIngredientFactory.cpp">
       <Filter>Factory</Filter>
     </ClCompile>
   </ItemGroup>

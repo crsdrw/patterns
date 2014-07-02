@@ -1,5 +1,5 @@
-#include "PatternsLib/CurrentConditionsDisplay.h"
-#include "PatternsLib/WeatherData.h"
+#include "PatternsLib/Observer/CurrentConditionsDisplay.h"
+#include "PatternsLib/Observer/WeatherData.h"
 #include <iostream>
 
 namespace Patterns {
