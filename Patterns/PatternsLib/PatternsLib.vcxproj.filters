@@ -16,11 +16,8 @@
     <Filter Include="Decorator">
       <UniqueIdentifier>{03565e54-f561-4287-8b89-c97a6657bec2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="SimpleFactory">
+    <Filter Include="Pizza">
       <UniqueIdentifier>{2e72c66c-6f9a-41c2-aad3-3197f2f8f8b6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="FactoryMethod">
-      <UniqueIdentifier>{1403d18a-387b-4749-9b43-4b8bcb7b8d43}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -123,41 +120,20 @@
     <ClInclude Include="Decorator\Whip.h">
       <Filter>Decorator</Filter>
     </ClInclude>
-    <ClInclude Include="Pizza\PizzaStoreV0.h">
-      <Filter>SimpleFactory</Filter>
-    </ClInclude>
     <ClInclude Include="Pizza\SimplePizzaFactory.h">
-      <Filter>SimpleFactory</Filter>
+      <Filter>Pizza</Filter>
     </ClInclude>
     <ClInclude Include="Pizza\Pizza.h">
-      <Filter>SimpleFactory</Filter>
+      <Filter>Pizza</Filter>
     </ClInclude>
     <ClInclude Include="Pizza\CheesePizza.h">
-      <Filter>SimpleFactory</Filter>
+      <Filter>Pizza</Filter>
     </ClInclude>
     <ClInclude Include="Pizza\PepperoniPizza.h">
-      <Filter>SimpleFactory</Filter>
-    </ClInclude>
-    <ClInclude Include="Pizza\ChicagoPizzaStore.h">
-      <Filter>FactoryMethod</Filter>
-    </ClInclude>
-    <ClInclude Include="Pizza\ChicagoStyleCheesePizza.h">
-      <Filter>FactoryMethod</Filter>
-    </ClInclude>
-    <ClInclude Include="Pizza\ChicagoStylePepperoniPizza.h">
-      <Filter>FactoryMethod</Filter>
-    </ClInclude>
-    <ClInclude Include="Pizza\NYPizzaStore.h">
-      <Filter>FactoryMethod</Filter>
-    </ClInclude>
-    <ClInclude Include="Pizza\NYStyleCheesePizza.h">
-      <Filter>FactoryMethod</Filter>
-    </ClInclude>
-    <ClInclude Include="Pizza\NYStylePepperoniPizza.h">
-      <Filter>FactoryMethod</Filter>
+      <Filter>Pizza</Filter>
     </ClInclude>
     <ClInclude Include="Pizza\PizzaStore.h">
-      <Filter>FactoryMethod</Filter>
+      <Filter>Pizza</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -174,19 +150,10 @@
       <Filter>Observer</Filter>
     </ClCompile>
     <ClCompile Include="Pizza\SimplePizzaFactory.cpp">
-      <Filter>SimpleFactory</Filter>
+      <Filter>Pizza</Filter>
     </ClCompile>
     <ClCompile Include="Pizza\Pizza.cpp">
-      <Filter>SimpleFactory</Filter>
-    </ClCompile>
-    <ClCompile Include="Pizza\ChicagoPizzaStore.cpp">
-      <Filter>FactoryMethod</Filter>
-    </ClCompile>
-    <ClCompile Include="Pizza\NYPizzaStore.cpp">
-      <Filter>FactoryMethod</Filter>
-    </ClCompile>
-    <ClCompile Include="Pizza\PizzaStore.cpp">
-      <Filter>FactoryMethod</Filter>
+      <Filter>Pizza</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

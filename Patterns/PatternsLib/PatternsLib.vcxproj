@@ -81,10 +81,7 @@
     <ClCompile Include="Observer\CurrentConditionsDisplay.cpp" />
     <ClCompile Include="Observer\ForecastDisplay.cpp" />
     <ClCompile Include="Observer\Subject.cpp" />
-    <ClCompile Include="Pizza\ChicagoPizzaStore.cpp" />
-    <ClCompile Include="Pizza\NYPizzaStore.cpp" />
     <ClCompile Include="Pizza\Pizza.cpp" />
-    <ClCompile Include="Pizza\PizzaStore.cpp" />
     <ClCompile Include="Pizza\SimplePizzaFactory.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -103,16 +100,9 @@
     <ClInclude Include="Observer\Subject.h" />
     <ClInclude Include="Observer\WeatherData.h" />
     <ClInclude Include="Pizza\CheesePizza.h" />
-    <ClInclude Include="Pizza\ChicagoPizzaStore.h" />
-    <ClInclude Include="Pizza\ChicagoStyleCheesePizza.h" />
-    <ClInclude Include="Pizza\ChicagoStylePepperoniPizza.h" />
-    <ClInclude Include="Pizza\NYPizzaStore.h" />
-    <ClInclude Include="Pizza\NYStyleCheesePizza.h" />
-    <ClInclude Include="Pizza\NYStylePepperoniPizza.h" />
     <ClInclude Include="Pizza\PepperoniPizza.h" />
     <ClInclude Include="Pizza\Pizza.h" />
     <ClInclude Include="Pizza\PizzaStore.h" />
-    <ClInclude Include="Pizza\PizzaStoreV0.h" />
     <ClInclude Include="Pizza\SimplePizzaFactory.h" />
     <ClInclude Include="SimUDuck\DecoyDuck.h" />
     <ClInclude Include="SimUDuck\Duck.h" />
