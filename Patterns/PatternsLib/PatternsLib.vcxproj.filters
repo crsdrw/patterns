@@ -123,18 +123,42 @@
     <ClInclude Include="Decorator\Whip.h">
       <Filter>Decorator</Filter>
     </ClInclude>
-    <ClInclude Include="Pizza\SimplePizzaFactory.h" />
-    <ClInclude Include="Pizza\CheesePizza.h" />
-    <ClInclude Include="Pizza\ChicagoPizzaStore.h" />
-    <ClInclude Include="Pizza\ChicagoStyleCheesePizza.h" />
-    <ClInclude Include="Pizza\ChicagoStylePepperoniPizza.h" />
-    <ClInclude Include="Pizza\NYPizzaStore.h" />
-    <ClInclude Include="Pizza\NYStyleCheesePizza.h" />
-    <ClInclude Include="Pizza\NYStylePepperoniPizza.h" />
-    <ClInclude Include="Pizza\PepperoniPizza.h" />
-    <ClInclude Include="Pizza\Pizza.h" />
-    <ClInclude Include="Pizza\PizzaStore.h" />
-    <ClInclude Include="Pizza\PizzaStoreV0.h" />
+    <ClInclude Include="Pizza\PizzaStoreV0.h">
+      <Filter>SimpleFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="Pizza\SimplePizzaFactory.h">
+      <Filter>SimpleFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="Pizza\Pizza.h">
+      <Filter>SimpleFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="Pizza\CheesePizza.h">
+      <Filter>SimpleFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="Pizza\PepperoniPizza.h">
+      <Filter>SimpleFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="Pizza\ChicagoPizzaStore.h">
+      <Filter>FactoryMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="Pizza\ChicagoStyleCheesePizza.h">
+      <Filter>FactoryMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="Pizza\ChicagoStylePepperoniPizza.h">
+      <Filter>FactoryMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="Pizza\NYPizzaStore.h">
+      <Filter>FactoryMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="Pizza\NYStyleCheesePizza.h">
+      <Filter>FactoryMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="Pizza\NYStylePepperoniPizza.h">
+      <Filter>FactoryMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="Pizza\PizzaStore.h">
+      <Filter>FactoryMethod</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MyString.cpp">
@@ -149,10 +173,20 @@
     <ClCompile Include="Observer\Subject.cpp">
       <Filter>Observer</Filter>
     </ClCompile>
-    <ClCompile Include="Pizza\ChicagoPizzaStore.cpp" />
-    <ClCompile Include="Pizza\NYPizzaStore.cpp" />
-    <ClCompile Include="Pizza\Pizza.cpp" />
-    <ClCompile Include="Pizza\PizzaStore.cpp" />
-    <ClCompile Include="Pizza\SimplePizzaFactory.cpp" />
+    <ClCompile Include="Pizza\SimplePizzaFactory.cpp">
+      <Filter>SimpleFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="Pizza\Pizza.cpp">
+      <Filter>SimpleFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="Pizza\ChicagoPizzaStore.cpp">
+      <Filter>FactoryMethod</Filter>
+    </ClCompile>
+    <ClCompile Include="Pizza\NYPizzaStore.cpp">
+      <Filter>FactoryMethod</Filter>
+    </ClCompile>
+    <ClCompile Include="Pizza\PizzaStore.cpp">
+      <Filter>FactoryMethod</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
