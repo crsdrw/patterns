@@ -1,8 +1,8 @@
-#include "PatternsLib/CheesePizza.h"
-#include "PatternsLib/Dough.h"
-#include "PatternsLib/Sauce.h"
-#include "PatternsLib/Cheese.h"
-#include "PatternsLib/PizzaIngredientFactory.h"
+#include "PatternsLib/Pizza/CheesePizza.h"
+#include "PatternsLib/Pizza/Dough.h"
+#include "PatternsLib/Pizza/Sauce.h"
+#include "PatternsLib/Pizza/Cheese.h"
+#include "PatternsLib/Pizza/PizzaIngredientFactory.h"
 
 #include <iostream>
 

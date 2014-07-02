@@ -1,5 +1,5 @@
 #pragma once
-#include "PatternsLib/Dough.h"
+#include "PatternsLib/Pizza/Dough.h"
 
 namespace Patterns {
 

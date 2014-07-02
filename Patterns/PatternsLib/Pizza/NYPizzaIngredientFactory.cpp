@@ -1,10 +1,10 @@
-#include "PatternsLib/NYPizzaIngredientFactory.h"
-#include "PatternsLib/ThinCrustDough.h"
-#include "PatternsLib/MarinaraSauce.h"
-#include "PatternsLib/ReggianoCheese.h"
-#include "PatternsLib/FreshClam.h"
-#include "PatternsLib/Garlic.h"
-#include "PatternsLib/Onion.h"
+#include "PatternsLib/Pizza/NYPizzaIngredientFactory.h"
+#include "PatternsLib/Pizza/ThinCrustDough.h"
+#include "PatternsLib/Pizza/MarinaraSauce.h"
+#include "PatternsLib/Pizza/ReggianoCheese.h"
+#include "PatternsLib/Pizza/FreshClam.h"
+#include "PatternsLib/Pizza/Garlic.h"
+#include "PatternsLib/Pizza/Onion.h"
 
 namespace Patterns {
 

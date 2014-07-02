@@ -1,11 +1,11 @@
-#include "PatternsLib/ChicagoPizzaIngredientFactory.h"
-#include "PatternsLib/ThickCrustDough.h"
-#include "PatternsLib/PlumTomatoSauce.h"
-#include "PatternsLib/Mozzarella.h"
-#include "PatternsLib/FrozenClam.h"
-#include "PatternsLib/BlackOlive.h"
-#include "PatternsLib/Spinach.h"
-#include "PatternsLib/Veggie.h"
+#include "PatternsLib/Pizza/ChicagoPizzaIngredientFactory.h"
+#include "PatternsLib/Pizza/ThickCrustDough.h"
+#include "PatternsLib/Pizza/PlumTomatoSauce.h"
+#include "PatternsLib/Pizza/Mozzarella.h"
+#include "PatternsLib/Pizza/FrozenClam.h"
+#include "PatternsLib/Pizza/BlackOlive.h"
+#include "PatternsLib/Pizza/Spinach.h"
+#include "PatternsLib/Pizza/Veggie.h"
 
 namespace Patterns {
 

@@ -1,10 +1,10 @@
-#include "PatternsLib/Pizza.h"
-#include "PatternsLib/PizzaIngredientFactory.h"
-#include "PatternsLib/Dough.h"
-#include "PatternsLib/Sauce.h"
-#include "PatternsLib/Cheese.h"
-#include "PatternsLib/Veggie.h"
-#include "PatternsLib/Clam.h"
+#include "PatternsLib/Pizza/Pizza.h"
+#include "PatternsLib/Pizza/PizzaIngredientFactory.h"
+#include "PatternsLib/Pizza/Dough.h"
+#include "PatternsLib/Pizza/Sauce.h"
+#include "PatternsLib/Pizza/Cheese.h"
+#include "PatternsLib/Pizza/Veggie.h"
+#include "PatternsLib/Pizza/Clam.h"
 #include <iostream>
 
 namespace Patterns {

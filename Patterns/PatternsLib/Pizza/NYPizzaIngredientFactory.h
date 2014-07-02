@@ -1,10 +1,8 @@
 #pragma once
-#include "PatternsLib/PizzaIngredientFactory.h"
-
+#include "PatternsLib/Pizza/PizzaIngredientFactory.h"
 
 namespace Patterns {
-
-  class ChicagoPizzaIngredientFactory : public PizzaIngredientFactory {
+  class NYPizzaIngredientFactory : public PizzaIngredientFactory {
   public:
     std::unique_ptr<Dough> createDough() override;
     std::unique_ptr<Sauce> createSauce() override;

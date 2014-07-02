@@ -1,10 +1,10 @@
 #include "PatternsConsole/MakePizza.h"
 #include "PatternsLib/PizzaStoreV0.h"
 #include "PatternsLib/SimplePizzaFactory.h"
-#include "PatternsLib/Pizza.h"
+#include "PatternsLib/Pizza/Pizza.h"
 #include "PatternsLib/PizzaStoreV0.h"
-#include "PatternsLib/NYPizzaStore.h"
-#include "PatternsLib/ChicagoPizzaStore.h"
+#include "PatternsLib/Pizza/NYPizzaStore.h"
+#include "PatternsLib/Pizza/ChicagoPizzaStore.h"
 
 #include <iostream>
 #include <memory>

@@ -1,7 +1,7 @@
-#include "PatternsLib/NYPizzaStore.h"
-#include "PatternsLib/NYPizzaIngredientFactory.h"
-#include "PatternsLib/CheesePizza.h"
-#include "PatternsLib/ClamPizza.h"
+#include "PatternsLib/Pizza/NYPizzaStore.h"
+#include "PatternsLib/Pizza/NYPizzaIngredientFactory.h"
+#include "PatternsLib/Pizza/CheesePizza.h"
+#include "PatternsLib/Pizza/ClamPizza.h"
 
 #include <memory>
 

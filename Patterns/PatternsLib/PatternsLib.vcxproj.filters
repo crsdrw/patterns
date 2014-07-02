@@ -48,24 +48,6 @@
     <ClInclude Include="PizzaStoreV0.h">
       <Filter>SimpleFactory</Filter>
     </ClInclude>
-    <ClInclude Include="PizzaStore.h">
-      <Filter>Factory</Filter>
-    </ClInclude>
-    <ClInclude Include="NYPizzaStore.h">
-      <Filter>Factory</Filter>
-    </ClInclude>
-    <ClInclude Include="ChicagoPizzaStore.h">
-      <Filter>Factory</Filter>
-    </ClInclude>
-    <ClInclude Include="PizzaIngredientFactory.h">
-      <Filter>Factory</Filter>
-    </ClInclude>
-    <ClInclude Include="NYPizzaIngredientFactory.h">
-      <Filter>Factory</Filter>
-    </ClInclude>
-    <ClInclude Include="Pizza.h">
-      <Filter>Factory</Filter>
-    </ClInclude>
     <ClInclude Include="PizzaV0.h">
       <Filter>SimpleFactory</Filter>
     </ClInclude>
@@ -74,66 +56,6 @@
     </ClInclude>
     <ClInclude Include="PepperoniPizzaV0.h">
       <Filter>SimpleFactory</Filter>
-    </ClInclude>
-    <ClInclude Include="Dough.h">
-      <Filter>Factory</Filter>
-    </ClInclude>
-    <ClInclude Include="Sauce.h">
-      <Filter>Factory</Filter>
-    </ClInclude>
-    <ClInclude Include="CheesePizza.h">
-      <Filter>Factory</Filter>
-    </ClInclude>
-    <ClInclude Include="ClamPizza.h">
-      <Filter>Factory</Filter>
-    </ClInclude>
-    <ClInclude Include="Clam.h">
-      <Filter>Factory</Filter>
-    </ClInclude>
-    <ClInclude Include="ThinCrustDough.h">
-      <Filter>Factory</Filter>
-    </ClInclude>
-    <ClInclude Include="MarinaraSauce.h">
-      <Filter>Factory</Filter>
-    </ClInclude>
-    <ClInclude Include="ReggianoCheese.h">
-      <Filter>Factory</Filter>
-    </ClInclude>
-    <ClInclude Include="Cheese.h">
-      <Filter>Factory</Filter>
-    </ClInclude>
-    <ClInclude Include="FreshClam.h">
-      <Filter>Factory</Filter>
-    </ClInclude>
-    <ClInclude Include="Onion.h">
-      <Filter>Factory</Filter>
-    </ClInclude>
-    <ClInclude Include="Veggie.h">
-      <Filter>Factory</Filter>
-    </ClInclude>
-    <ClInclude Include="Garlic.h">
-      <Filter>Factory</Filter>
-    </ClInclude>
-    <ClInclude Include="ChicagoPizzaIngredientFactory.h">
-      <Filter>Factory</Filter>
-    </ClInclude>
-    <ClInclude Include="ThickCrustDough.h">
-      <Filter>Factory</Filter>
-    </ClInclude>
-    <ClInclude Include="PlumTomatoSauce.h">
-      <Filter>Factory</Filter>
-    </ClInclude>
-    <ClInclude Include="Mozzarella.h">
-      <Filter>Factory</Filter>
-    </ClInclude>
-    <ClInclude Include="BlackOlive.h">
-      <Filter>Factory</Filter>
-    </ClInclude>
-    <ClInclude Include="Spinach.h">
-      <Filter>Factory</Filter>
-    </ClInclude>
-    <ClInclude Include="FrozenClam.h">
-      <Filter>Factory</Filter>
     </ClInclude>
     <ClInclude Include="Observer\CurrentConditionsDisplay.h">
       <Filter>Observer</Filter>
@@ -216,6 +138,32 @@
     <ClInclude Include="Decorator\Whip.h">
       <Filter>Decorator</Filter>
     </ClInclude>
+    <ClInclude Include="Pizza\BlackOlive.h" />
+    <ClInclude Include="Pizza\Cheese.h" />
+    <ClInclude Include="Pizza\CheesePizza.h" />
+    <ClInclude Include="Pizza\ChicagoPizzaIngredientFactory.h" />
+    <ClInclude Include="Pizza\ChicagoPizzaStore.h" />
+    <ClInclude Include="Pizza\Clam.h" />
+    <ClInclude Include="Pizza\ClamPizza.h" />
+    <ClInclude Include="Pizza\Dough.h" />
+    <ClInclude Include="Pizza\FreshClam.h" />
+    <ClInclude Include="Pizza\FrozenClam.h" />
+    <ClInclude Include="Pizza\Garlic.h" />
+    <ClInclude Include="Pizza\MarinaraSauce.h" />
+    <ClInclude Include="Pizza\Mozzarella.h" />
+    <ClInclude Include="Pizza\NYPizzaIngredientFactory.h" />
+    <ClInclude Include="Pizza\NYPizzaStore.h" />
+    <ClInclude Include="Pizza\Onion.h" />
+    <ClInclude Include="Pizza\Pizza.h" />
+    <ClInclude Include="Pizza\PizzaIngredientFactory.h" />
+    <ClInclude Include="Pizza\PizzaStore.h" />
+    <ClInclude Include="Pizza\PlumTomatoSauce.h" />
+    <ClInclude Include="Pizza\ReggianoCheese.h" />
+    <ClInclude Include="Pizza\Sauce.h" />
+    <ClInclude Include="Pizza\Spinach.h" />
+    <ClInclude Include="Pizza\ThickCrustDough.h" />
+    <ClInclude Include="Pizza\ThinCrustDough.h" />
+    <ClInclude Include="Pizza\Veggie.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MyString.cpp">
@@ -224,26 +172,8 @@
     <ClCompile Include="SimplePizzaFactory.cpp">
       <Filter>SimpleFactory</Filter>
     </ClCompile>
-    <ClCompile Include="PizzaStore.cpp">
-      <Filter>Factory</Filter>
-    </ClCompile>
-    <ClCompile Include="NYPizzaStore.cpp">
-      <Filter>Factory</Filter>
-    </ClCompile>
-    <ClCompile Include="ChicagoPizzaStore.cpp">
-      <Filter>Factory</Filter>
-    </ClCompile>
-    <ClCompile Include="Pizza.cpp">
-      <Filter>Factory</Filter>
-    </ClCompile>
     <ClCompile Include="PizzaV0.cpp">
       <Filter>SimpleFactory</Filter>
-    </ClCompile>
-    <ClCompile Include="NYPizzaIngredientFactory.cpp">
-      <Filter>Factory</Filter>
-    </ClCompile>
-    <ClCompile Include="ClamPizza.cpp">
-      <Filter>Factory</Filter>
     </ClCompile>
     <ClCompile Include="Observer\CurrentConditionsDisplay.cpp">
       <Filter>Observer</Filter>
@@ -254,11 +184,13 @@
     <ClCompile Include="Observer\Subject.cpp">
       <Filter>Observer</Filter>
     </ClCompile>
-    <ClCompile Include="CheesePizza.cpp">
-      <Filter>Factory</Filter>
-    </ClCompile>
-    <ClCompile Include="ChicagoPizzaIngredientFactory.cpp">
-      <Filter>Factory</Filter>
-    </ClCompile>
+    <ClCompile Include="Pizza\CheesePizza.cpp" />
+    <ClCompile Include="Pizza\ChicagoPizzaIngredientFactory.cpp" />
+    <ClCompile Include="Pizza\ChicagoPizzaStore.cpp" />
+    <ClCompile Include="Pizza\ClamPizza.cpp" />
+    <ClCompile Include="Pizza\NYPizzaIngredientFactory.cpp" />
+    <ClCompile Include="Pizza\NYPizzaStore.cpp" />
+    <ClCompile Include="Pizza\Pizza.cpp" />
+    <ClCompile Include="Pizza\PizzaStore.cpp" />
   </ItemGroup>
 </Project>

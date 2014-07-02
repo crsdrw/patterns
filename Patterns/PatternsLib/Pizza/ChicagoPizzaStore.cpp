@@ -1,7 +1,7 @@
-#include "PatternsLib/ChicagoPizzaStore.h"
-#include "PatternsLib/ChicagoPizzaIngredientFactory.h"
-#include "PatternsLib/CheesePizza.h"
-#include "PatternsLib/ClamPizza.h"
+#include "PatternsLib/Pizza/ChicagoPizzaStore.h"
+#include "PatternsLib/Pizza/ChicagoPizzaIngredientFactory.h"
+#include "PatternsLib/Pizza/CheesePizza.h"
+#include "PatternsLib/Pizza/ClamPizza.h"
 #include <memory>
 
 namespace Patterns {

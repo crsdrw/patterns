@@ -1,5 +1,5 @@
 #pragma once
-#include "PatternsLib/Clam.h"
+#include "PatternsLib/Pizza/Clam.h"
 
 namespace Patterns {
 
