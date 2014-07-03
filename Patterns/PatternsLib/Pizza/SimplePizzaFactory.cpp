@@ -8,10 +8,8 @@ namespace Patterns {
   createPizza(const std::string& type) {
     if (type == "cheese")
       return std::make_unique<CheesePizza>();
-    
     if (type == "pepperoni")
       return std::make_unique<PepperoniPizza>();
-
     return nullptr;
   }
 
