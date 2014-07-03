@@ -5,14 +5,14 @@
 namespace Patterns {
 
   class Pizza {
-  private:
+   private:
     std::string name_;
     std::string dough_;
     std::string sauce_;
     std::vector<std::string> toppings_;
-  public:
+   public:
     virtual ~Pizza() {}
-    Pizza(std::string name, std::string dough, std::string sauce) 
+    Pizza(std::string name, std::string dough, std::string sauce)
       : name_(std::move(name)), dough_(std::move(dough)), sauce_(std::move(sauce)) {}
     virtual void prepare();
     virtual void bake();
@@ -21,6 +21,5 @@ namespace Patterns {
     void addTopping(std::string topping) { toppings_.emplace_back(std::move(topping)); }
     std::string getName() { return name_; }
   };
-
 
 }  // namespace Patterns

@@ -3,7 +3,7 @@
 
 namespace Patterns {
   class PepperoniPizza : public Pizza {
-  public:
+   public:
     PepperoniPizza() : Pizza("Pepperoni Pizza", "Normal dough", "Tomato sauce"){
       addTopping("Pepperoni");
     }

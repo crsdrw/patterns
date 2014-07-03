@@ -135,6 +135,18 @@
     <ClInclude Include="Pizza\PizzaStore.h">
       <Filter>Pizza</Filter>
     </ClInclude>
+    <ClInclude Include="Pizza\NYStylePepperoniPizza.h">
+      <Filter>Pizza</Filter>
+    </ClInclude>
+    <ClInclude Include="Pizza\ChicagoStyleCheesePizza.h">
+      <Filter>Pizza</Filter>
+    </ClInclude>
+    <ClInclude Include="Pizza\ChicagoStylePepperoniPizza.h">
+      <Filter>Pizza</Filter>
+    </ClInclude>
+    <ClInclude Include="Pizza\NYStyleCheesePizza.h">
+      <Filter>Pizza</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MyString.cpp">
@@ -153,6 +165,9 @@
       <Filter>Pizza</Filter>
     </ClCompile>
     <ClCompile Include="Pizza\Pizza.cpp">
+      <Filter>Pizza</Filter>
+    </ClCompile>
+    <ClCompile Include="Pizza\PizzaStore.cpp">
       <Filter>Pizza</Filter>
     </ClCompile>
   </ItemGroup>
