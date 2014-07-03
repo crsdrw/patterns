@@ -5,8 +5,9 @@ namespace Patterns {
 
   class CheesePizza : public Pizza {
    public:
-    CheesePizza() : Pizza("CheesePizza", "Normal dough", "Tomato sauce") {
-      addTopping("Grated Mozzarella Cheese");
+    CheesePizza() : Pizza("Cheese Pizza", "Regular crust dough", "Marinara sauce") {
+      addTopping("Fresh Mozzarella");
+      addTopping("Grated parmesan cheese");
     }
   };
 

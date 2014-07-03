@@ -7,7 +7,10 @@ namespace Patterns {
   class ChicagoStylePepperoniPizza : public Pizza {
   public:
     ChicagoStylePepperoniPizza() : Pizza("Chicago Style Deep Dish Pepperoni Pizza", "Extra Thick Crust Dough", "Plum Tomato Sauce") {
-      addTopping("Thickly Sliced Pepperoni");
+      addTopping("Black Olives");
+      addTopping("Spinach");
+      addTopping("Eggplant");
+      addTopping("Sliced Pepperoni");
     }
 
     void cut() override {
