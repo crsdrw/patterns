@@ -5,6 +5,6 @@
 
 namespace Patterns {
 
-  void planVacation(AbstractBuilder* builder);
+  void createVacation(AbstractBuilder* builder);
 
 }  // namespace Patterns
