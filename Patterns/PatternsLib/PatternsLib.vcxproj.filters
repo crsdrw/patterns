@@ -162,6 +162,9 @@
     <ClInclude Include="Builder\VacationDay.h">
       <Filter>Builder</Filter>
     </ClInclude>
+    <ClInclude Include="Builder\TravelAgent.h">
+      <Filter>Builder</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MyString.cpp">
@@ -186,6 +189,9 @@
       <Filter>Pizza</Filter>
     </ClCompile>
     <ClCompile Include="Builder\VacationBuilder.cpp">
+      <Filter>Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="Builder\TravelAgent.cpp">
       <Filter>Builder</Filter>
     </ClCompile>
   </ItemGroup>
