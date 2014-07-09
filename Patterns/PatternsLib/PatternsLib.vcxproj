@@ -77,6 +77,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Builder\TravelAgent.cpp" />
+    <ClCompile Include="Builder\VacationBuilder.cpp" />
     <ClCompile Include="MyString.cpp" />
     <ClCompile Include="Observer\CurrentConditionsDisplay.cpp" />
     <ClCompile Include="Observer\ForecastDisplay.cpp" />
@@ -93,6 +95,11 @@
     <ClCompile Include="SimplePizzaFactory.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Builder\AbstractBuilder.h" />
+    <ClInclude Include="Builder\TravelAgent.h" />
+    <ClInclude Include="Builder\VacationBuilder.h" />
+    <ClInclude Include="Builder\VacationDay.h" />
+    <ClInclude Include="Builder\VacationPlanner.h" />
     <ClInclude Include="CheesePizzaV0.h" />
     <ClInclude Include="Decorator\Beverage.h" />
     <ClInclude Include="Decorator\CondimentDecorator.h" />
