@@ -10,6 +10,9 @@ namespace Patterns {
       return std::make_unique<CheesePizza>();
     if (type == "pepperoni")
       return std::make_unique<PepperoniPizza>();
+
+    //...
+
     return nullptr;
   }
 
