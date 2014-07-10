@@ -9,8 +9,8 @@ namespace Patterns {
   void makePizza() {
 
     PizzaStore pizza_store;
-    auto pizza1 = pizza_store.orderPizza("cheese");
-    auto pizza2 = pizza_store.orderPizza("pepperoni");
+    auto pizza = pizza_store.orderPizza("cheese");
+    pizza = pizza_store.orderPizza("pepperoni");
 
   }
 }  // namspace Patterns
