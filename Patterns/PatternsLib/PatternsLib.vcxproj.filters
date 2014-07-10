@@ -19,6 +19,9 @@
     <Filter Include="Pizza">
       <UniqueIdentifier>{2e72c66c-6f9a-41c2-aad3-3197f2f8f8b6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Builder">
+      <UniqueIdentifier>{de118768-6563-4b1d-ae47-60c1a960de49}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyString.h">
@@ -147,6 +150,21 @@
     <ClInclude Include="Pizza\NYStyleCheesePizza.h">
       <Filter>Pizza</Filter>
     </ClInclude>
+    <ClInclude Include="Builder\AbstractBuilder.h">
+      <Filter>Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="Builder\VacationBuilder.h">
+      <Filter>Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="Builder\VacationPlanner.h">
+      <Filter>Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="Builder\VacationDay.h">
+      <Filter>Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="Builder\TravelAgent.h">
+      <Filter>Builder</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MyString.cpp">
@@ -169,6 +187,12 @@
     </ClCompile>
     <ClCompile Include="Pizza\PizzaStore.cpp">
       <Filter>Pizza</Filter>
+    </ClCompile>
+    <ClCompile Include="Builder\VacationBuilder.cpp">
+      <Filter>Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="Builder\TravelAgent.cpp">
+      <Filter>Builder</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
