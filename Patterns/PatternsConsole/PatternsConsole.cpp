@@ -8,6 +8,6 @@ int main() {
   //Patterns::playWithDucks();
   //Patterns::displayWeather();
   //Patterns::makeCoffee();
-  //Patterns::makePizza();
-  Patterns::planVacation();
+  //Patterns::planVacation();
+  Patterns::makePizza();
 }
