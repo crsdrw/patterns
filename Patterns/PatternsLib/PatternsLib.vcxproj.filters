@@ -25,6 +25,9 @@
     <Filter Include="Builder">
       <UniqueIdentifier>{3815f939-7671-41a9-abd9-35ef8bcb8276}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ObjectPool">
+      <UniqueIdentifier>{727a1003-8759-45fe-a410-3e95bfc42372}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyString.h">
@@ -234,6 +237,12 @@
     <ClInclude Include="Builder\VacationPlanner.h">
       <Filter>Builder</Filter>
     </ClInclude>
+    <ClInclude Include="ObjectPool\Resource.h">
+      <Filter>ObjectPool</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectPool\ObjectPool.h">
+      <Filter>ObjectPool</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MyString.cpp">
@@ -283,6 +292,9 @@
     </ClCompile>
     <ClCompile Include="Builder\TravelAgent.cpp">
       <Filter>Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectPool\ObjectPool.cpp">
+      <Filter>ObjectPool</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

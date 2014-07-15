@@ -80,6 +80,7 @@
     <ClCompile Include="Builder\TravelAgent.cpp" />
     <ClCompile Include="Builder\VacationBuilder.cpp" />
     <ClCompile Include="MyString.cpp" />
+    <ClCompile Include="ObjectPool\ObjectPool.cpp" />
     <ClCompile Include="Observer\CurrentConditionsDisplay.cpp" />
     <ClCompile Include="Observer\ForecastDisplay.cpp" />
     <ClCompile Include="Observer\Subject.cpp" />
@@ -110,6 +111,8 @@
     <ClInclude Include="Decorator\Mocha.h" />
     <ClInclude Include="Decorator\Whip.h" />
     <ClInclude Include="MyString.h" />
+    <ClInclude Include="ObjectPool\ObjectPool.h" />
+    <ClInclude Include="ObjectPool\Resource.h" />
     <ClInclude Include="Observer\CurrentConditionsDisplay.h" />
     <ClInclude Include="Observer\ForecastDisplay.h" />
     <ClInclude Include="Observer\Observer.h" />
