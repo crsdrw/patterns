@@ -293,8 +293,5 @@
     <ClCompile Include="Builder\TravelAgent.cpp">
       <Filter>Builder</Filter>
     </ClCompile>
-    <ClCompile Include="ObjectPool\ObjectPool.cpp">
-      <Filter>ObjectPool</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

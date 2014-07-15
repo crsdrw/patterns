@@ -3,11 +3,13 @@
 #include "PatternsConsole/MakeCoffee.h"
 #include "PatternsConsole/MakePizza.h"
 #include "PatternsConsole/PlanVacation.h"
+#include "PatternsConsole/UsePool.h"
 
 int main() {
   //Patterns::playWithDucks();
   //Patterns::displayWeather();
   //Patterns::makeCoffee();
   //Patterns::makePizza();
-  Patterns::planVacation();
+  //Patterns::planVacation();
+  Patterns::usePool();
 }

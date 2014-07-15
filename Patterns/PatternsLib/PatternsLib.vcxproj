@@ -80,7 +80,6 @@
     <ClCompile Include="Builder\TravelAgent.cpp" />
     <ClCompile Include="Builder\VacationBuilder.cpp" />
     <ClCompile Include="MyString.cpp" />
-    <ClCompile Include="ObjectPool\ObjectPool.cpp" />
     <ClCompile Include="Observer\CurrentConditionsDisplay.cpp" />
     <ClCompile Include="Observer\ForecastDisplay.cpp" />
     <ClCompile Include="Observer\Subject.cpp" />
