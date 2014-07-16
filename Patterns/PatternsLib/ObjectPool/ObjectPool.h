@@ -7,31 +7,29 @@
 
 namespace Patterns {
 
-  template<class T> class ObjectPool;
-
-  template<class T>
-  struct ObjectPoolDeleter {
-    ObjectPool<T>* object_pool_;
-    void operator()(T* resource);
-  };
-
-
   template <class T>
   class ObjectPool {
-    friend struct ObjectPoolDeleter < T > ;
   private:
-    std::vector<T> resources_;
-    std::deque<T*> free_list_;
-    void freeResource(T*);
-  public:
-    ObjectPool(size_t pool_size);
-    std::unique_ptr<T, ObjectPoolDeleter<T>> getResource();
-  };
+    
+    // Inner class to be the custom deleter for smart pointers to the resource
+    // retrieved from the pool.
+    template<class T>
+    struct Deleter {
+      ObjectPool<T>* object_pool_;
+      void operator()(T* resource) { object_pool_->freeResource(resource); }
+    };
 
-  template<class T> void
-  ObjectPoolDeleter<T>::operator()(T* resource) {
-    object_pool_->freeResource(resource);
-  }
+    friend struct Deleter < T >;  // Only the Deleter has access to free resources.
+    
+    std::vector<T> resources_;  // The object pool itself.
+    std::vector<T*> free_list_;  // List of available objects in the pool.
+
+    void freeResource(T*);  // Free a resource from the pool, only called by Deleter.
+  public:
+    typedef std::unique_ptr<T, Deleter<T>> Ptr;
+    ObjectPool(size_t pool_size);
+    Ptr getResource();
+  };
 
   template<class T>
   ObjectPool<T>::ObjectPool(size_t pool_size) : free_list_(pool_size), resources_(pool_size) {
@@ -40,13 +38,13 @@ namespace Patterns {
     }
   }
 
-  template <class T> std::unique_ptr<T, ObjectPoolDeleter<T>>
+  template <class T> typename ObjectPool<T>::Ptr
   ObjectPool<T>::getResource() {
     if (free_list_.empty())
       return nullptr;
-    T* ret = free_list_.back();
+    T* resource = free_list_.back();
     free_list_.pop_back();
-    return std::unique_ptr<T, ObjectPoolDeleter<T>>(ret, ObjectPoolDeleter < T > {this});
+    return Ptr(resource, Deleter < T > {this});
   }
 
   template <class T> void
