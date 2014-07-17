@@ -19,4 +19,5 @@ namespace Patterns {
     std::cout << "R3 in use " << r3->inUse() << std::endl;
 
   }
+
 }  // namespace Patterns

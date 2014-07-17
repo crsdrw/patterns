@@ -18,8 +18,6 @@ namespace Patterns {
       ObjectPool<T>* object_pool_;
       void operator()(T* resource) { object_pool_->freeResource(resource); }
     };
-
-    friend struct Deleter < T >;  // Only the Deleter has access to free resources.
     
     std::vector<T> resources_;  // The object pool itself.
     std::vector<T*> free_list_;  // List of available objects in the pool.
@@ -33,18 +31,17 @@ namespace Patterns {
 
   template<class T>
   ObjectPool<T>::ObjectPool(size_t pool_size) : free_list_(pool_size), resources_(pool_size) {
-    for (auto i = 0u; i != pool_size; ++i) {
+    for (auto i = 0u; i != pool_size; ++i)
       free_list_[i] = &resources_[i];
-    }
   }
 
   template <class T> typename ObjectPool<T>::Ptr
   ObjectPool<T>::getResource() {
     if (free_list_.empty())
       return nullptr;
-    T* resource = free_list_.back();
+    auto resource = Ptr(free_list_.back(), Deleter<T>{this});
     free_list_.pop_back();
-    return Ptr(resource, Deleter < T > {this});
+    return resource;
   }
 
   template <class T> void
