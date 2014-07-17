@@ -6,7 +6,7 @@ namespace {
 
   struct TestResource {
     bool in_use_{ false };
-    void free() { in_use_ = false; }
+    void clear() { in_use_ = false; }
   };
 
 }  // namespace

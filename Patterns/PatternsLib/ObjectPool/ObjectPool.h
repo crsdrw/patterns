@@ -46,7 +46,7 @@ namespace Patterns {
 
   template <class T> void
   ObjectPool<T>::freeResource(T* resource) {
-    resource->free();
+    resource->clear();
     free_list_.push_back(resource);
   }
 

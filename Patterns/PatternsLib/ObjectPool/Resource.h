@@ -8,7 +8,7 @@ namespace Patterns {
   public:
     bool inUse() { return in_use_; }
     void init() { in_use_ = true; }
-    void free() { in_use_ = false; }
+    void clear() { in_use_ = false; }
   };
 
 }  // namespace Patterns

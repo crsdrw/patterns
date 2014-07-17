@@ -11,5 +11,6 @@ int main() {
   //Patterns::makeCoffee();
   //Patterns::makePizza();
   //Patterns::planVacation();
-  Patterns::usePool();
+  //Patterns::usePool();
+  Patterns::performPool();
 }

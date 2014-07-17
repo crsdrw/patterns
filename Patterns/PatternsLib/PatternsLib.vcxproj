@@ -112,6 +112,7 @@
     <ClInclude Include="MyString.h" />
     <ClInclude Include="ObjectPool\ObjectPool.h" />
     <ClInclude Include="ObjectPool\Resource.h" />
+    <ClInclude Include="ObjectPool\ResourceE.h" />
     <ClInclude Include="Observer\CurrentConditionsDisplay.h" />
     <ClInclude Include="Observer\ForecastDisplay.h" />
     <ClInclude Include="Observer\Observer.h" />

@@ -243,6 +243,7 @@
     <ClInclude Include="ObjectPool\ObjectPool.h">
       <Filter>ObjectPool</Filter>
     </ClInclude>
+    <ClInclude Include="ObjectPool\ResourceE.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MyString.cpp">
