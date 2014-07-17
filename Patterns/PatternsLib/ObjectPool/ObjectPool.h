@@ -2,7 +2,6 @@
 
 #include "PatternsLib/ObjectPool/Resource.h"
 #include <vector>
-#include <deque>
 #include <memory>
 
 namespace Patterns {
