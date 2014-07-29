@@ -3,6 +3,7 @@
 #include "PatternsLib/ObjectPool/Resource.h"
 #include "PatternsLib/ObjectPool/ResourceE.h"
 #include <iostream>
+#include <deque>
 
 namespace {
 
@@ -59,7 +60,7 @@ namespace Patterns {
     std::cout << "Commencing test..." << std::endl;
 
 
-    for (int i = 0; i != 1000; ++i)
+    for (int i = 0; i != 10; ++i)
       stressTestPool(object_pool);
   }
 
