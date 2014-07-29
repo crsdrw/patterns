@@ -1,6 +1,5 @@
 #pragma once
 
-#include "PatternsLib/ObjectPool/Resource.h"
 #include <vector>
 #include <memory>
 
