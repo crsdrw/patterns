@@ -1,7 +1,7 @@
-#include "PatternsLib/SimplePizzaFactory.h"
-#include "PatternsLib/PizzaV0.h"
-#include "PatternsLib/CheesePizzav0.h"
-#include "PatternsLib/PepperoniPizzaV0.h"
+#include "PatternsLib/Pizza/SimplePizzaFactory.h"
+#include "PatternsLib/Pizza/PizzaV0.h"
+#include "PatternsLib/Pizza/CheesePizzav0.h"
+#include "PatternsLib/Pizza/PepperoniPizzaV0.h"
 
 namespace Patterns {
 

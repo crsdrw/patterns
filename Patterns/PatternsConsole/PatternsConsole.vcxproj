@@ -87,6 +87,7 @@
     <ClCompile Include="PlanVacation.cpp" />
     <ClCompile Include="PlayWithDucks.cpp" />
     <ClCompile Include="UsePool.cpp" />
+    <ClCompile Include="UseSingleton.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PatternsLib\PatternsLib.vcxproj">
@@ -100,6 +101,7 @@
     <ClInclude Include="PlanVacation.h" />
     <ClInclude Include="PlayWithDucks.h" />
     <ClInclude Include="UsePool.h" />
+    <ClInclude Include="UseSingleton.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

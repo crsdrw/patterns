@@ -1,8 +1,8 @@
 #include "PatternsConsole/MakePizza.h"
-#include "PatternsLib/PizzaStoreV0.h"
-#include "PatternsLib/SimplePizzaFactory.h"
+#include "PatternsLib/Pizza/PizzaStoreV0.h"
+#include "PatternsLib/Pizza/SimplePizzaFactory.h"
 #include "PatternsLib/Pizza/Pizza.h"
-#include "PatternsLib/PizzaStoreV0.h"
+#include "PatternsLib/Pizza/PizzaStoreV0.h"
 #include "PatternsLib/Pizza/NYPizzaStore.h"
 #include "PatternsLib/Pizza/ChicagoPizzaStore.h"
 

@@ -28,11 +28,11 @@
     <Filter Include="ObjectPool">
       <UniqueIdentifier>{727a1003-8759-45fe-a410-3e95bfc42372}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Singleton">
+      <UniqueIdentifier>{fe0de4e4-f738-40ac-be2b-057ba01372d0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MyString.h">
-      <Filter>Utility</Filter>
-    </ClInclude>
     <ClInclude Include="SimUDuck\Duck.h">
       <Filter>SimUDuck</Filter>
     </ClInclude>
@@ -47,21 +47,6 @@
     </ClInclude>
     <ClInclude Include="SimUDuck\DecoyDuck.h">
       <Filter>SimUDuck</Filter>
-    </ClInclude>
-    <ClInclude Include="SimplePizzaFactory.h">
-      <Filter>SimpleFactory</Filter>
-    </ClInclude>
-    <ClInclude Include="PizzaStoreV0.h">
-      <Filter>SimpleFactory</Filter>
-    </ClInclude>
-    <ClInclude Include="PizzaV0.h">
-      <Filter>SimpleFactory</Filter>
-    </ClInclude>
-    <ClInclude Include="CheesePizzaV0.h">
-      <Filter>SimpleFactory</Filter>
-    </ClInclude>
-    <ClInclude Include="PepperoniPizzaV0.h">
-      <Filter>SimpleFactory</Filter>
     </ClInclude>
     <ClInclude Include="Observer\CurrentConditionsDisplay.h">
       <Filter>Observer</Filter>
@@ -244,17 +229,29 @@
       <Filter>ObjectPool</Filter>
     </ClInclude>
     <ClInclude Include="ObjectPool\ResourceE.h" />
+    <ClInclude Include="Singleton\Singleton.h">
+      <Filter>Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="Pizza\SimplePizzaFactory.h">
+      <Filter>SimpleFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="Pizza\CheesePizzaV0.h">
+      <Filter>SimpleFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="Pizza\PepperoniPizzaV0.h">
+      <Filter>SimpleFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="Pizza\PizzaStoreV0.h">
+      <Filter>SimpleFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="Pizza\PizzaV0.h">
+      <Filter>SimpleFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="MyString.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MyString.cpp">
-      <Filter>Utility</Filter>
-    </ClCompile>
-    <ClCompile Include="SimplePizzaFactory.cpp">
-      <Filter>SimpleFactory</Filter>
-    </ClCompile>
-    <ClCompile Include="PizzaV0.cpp">
-      <Filter>SimpleFactory</Filter>
-    </ClCompile>
     <ClCompile Include="Observer\CurrentConditionsDisplay.cpp">
       <Filter>Observer</Filter>
     </ClCompile>
@@ -293,6 +290,15 @@
     </ClCompile>
     <ClCompile Include="Builder\TravelAgent.cpp">
       <Filter>Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="Pizza\PizzaV0.cpp">
+      <Filter>SimpleFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="Pizza\SimplePizzaFactory.cpp">
+      <Filter>SimpleFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="MyString.cpp">
+      <Filter>Utility</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

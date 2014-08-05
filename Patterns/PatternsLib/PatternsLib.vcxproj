@@ -83,7 +83,7 @@
     <ClCompile Include="Observer\CurrentConditionsDisplay.cpp" />
     <ClCompile Include="Observer\ForecastDisplay.cpp" />
     <ClCompile Include="Observer\Subject.cpp" />
-    <ClCompile Include="PizzaV0.cpp" />
+    <ClCompile Include="Pizza\PizzaV0.cpp" />
     <ClCompile Include="Pizza\CheesePizza.cpp" />
     <ClCompile Include="Pizza\ChicagoPizzaIngredientFactory.cpp" />
     <ClCompile Include="Pizza\ChicagoPizzaStore.cpp" />
@@ -92,7 +92,7 @@
     <ClCompile Include="Pizza\NYPizzaStore.cpp" />
     <ClCompile Include="Pizza\Pizza.cpp" />
     <ClCompile Include="Pizza\PizzaStore.cpp" />
-    <ClCompile Include="SimplePizzaFactory.cpp" />
+    <ClCompile Include="Pizza\SimplePizzaFactory.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Builder\AbstractBuilder.h" />
@@ -100,7 +100,7 @@
     <ClInclude Include="Builder\VacationBuilder.h" />
     <ClInclude Include="Builder\VacationDay.h" />
     <ClInclude Include="Builder\VacationPlanner.h" />
-    <ClInclude Include="CheesePizzaV0.h" />
+    <ClInclude Include="Pizza\CheesePizzaV0.h" />
     <ClInclude Include="Decorator\Beverage.h" />
     <ClInclude Include="Decorator\CondimentDecorator.h" />
     <ClInclude Include="Decorator\DarkRoast.h" />
@@ -118,9 +118,9 @@
     <ClInclude Include="Observer\Observer.h" />
     <ClInclude Include="Observer\Subject.h" />
     <ClInclude Include="Observer\WeatherData.h" />
-    <ClInclude Include="PepperoniPizzaV0.h" />
-    <ClInclude Include="PizzaStoreV0.h" />
-    <ClInclude Include="PizzaV0.h" />
+    <ClInclude Include="Pizza\PepperoniPizzaV0.h" />
+    <ClInclude Include="Pizza\PizzaStoreV0.h" />
+    <ClInclude Include="Pizza\PizzaV0.h" />
     <ClInclude Include="Pizza\BlackOlive.h" />
     <ClInclude Include="Pizza\Cheese.h" />
     <ClInclude Include="Pizza\CheesePizza.h" />
@@ -147,12 +147,13 @@
     <ClInclude Include="Pizza\ThickCrustDough.h" />
     <ClInclude Include="Pizza\ThinCrustDough.h" />
     <ClInclude Include="Pizza\Veggie.h" />
-    <ClInclude Include="SimplePizzaFactory.h" />
+    <ClInclude Include="Pizza\SimplePizzaFactory.h" />
     <ClInclude Include="SimUDuck\DecoyDuck.h" />
     <ClInclude Include="SimUDuck\Duck.h" />
     <ClInclude Include="SimUDuck\MallardDuck.h" />
     <ClInclude Include="SimUDuck\RedheadDuck.h" />
     <ClInclude Include="SimUDuck\RubberDuck.h" />
+    <ClInclude Include="Singleton\Singleton.h" />
     <ClInclude Include="Strategy\DecoyDuck.h" />
     <ClInclude Include="Strategy\Duck.h" />
     <ClInclude Include="Strategy\FlyBehaviour.h" />

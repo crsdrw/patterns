@@ -4,6 +4,7 @@
 #include "PatternsConsole/MakePizza.h"
 #include "PatternsConsole/PlanVacation.h"
 #include "PatternsConsole/UsePool.h"
+#include "PatternsConsole/UseSingleton.h"
 
 int main() {
   //Patterns::playWithDucks();
@@ -12,5 +13,6 @@ int main() {
   //Patterns::makePizza();
   //Patterns::planVacation();
   //Patterns::usePool();
-  Patterns::performPool();
+  //Patterns::performPool();
+  Patterns::useSingleton();
 }
