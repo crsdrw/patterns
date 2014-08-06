@@ -250,6 +250,9 @@
     <ClInclude Include="MyString.h">
       <Filter>Utility</Filter>
     </ClInclude>
+    <ClInclude Include="Singleton\ThreadSafeSingleton.h">
+      <Filter>Singleton</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Observer\CurrentConditionsDisplay.cpp">
@@ -299,6 +302,9 @@
     </ClCompile>
     <ClCompile Include="MyString.cpp">
       <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Singleton\ThreadSafeSingleton.cpp">
+      <Filter>Singleton</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

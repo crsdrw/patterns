@@ -15,4 +15,5 @@ int main() {
   //Patterns::usePool();
   //Patterns::performPool();
   Patterns::useSingleton();
+  Patterns::useThreadSafeSingleton();
 }
