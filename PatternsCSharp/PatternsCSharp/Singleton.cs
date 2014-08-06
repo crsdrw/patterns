@@ -2,6 +2,7 @@
 
 namespace PatternsCSharp
 {
+    // See http://csharpindepth.com/articles/general/singleton.aspx
     public sealed class Singleton
     {
         private static readonly Lazy<Singleton> lazy =
