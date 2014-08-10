@@ -1,28 +1,27 @@
-#pragma once
-
 #include <vector>
 #include <memory>
 
 namespace Patterns {
 
-  template <class T>
+template <class T>
   class ObjectPool {
   private:
-    
     // Inner class to be the custom deleter for smart pointers to the resource
     // retrieved from the pool.
-    template<class T>
+    template <class T1>
     struct Deleter {
-      ObjectPool<T>* object_pool_;
-      void operator()(T* resource) { object_pool_->freeResource(resource); }
+      ObjectPool<T1>* object_pool_;
+      void operator()(T1* resource) { object_pool_->freeResource(resource); }
     };
     
-    std::vector<T> resources_;  // The object pool itself.
+    std::vector<T> resources_;   // The object pool itself.
     std::vector<T*> free_list_;  // List of available objects in the pool.
 
     void freeResource(T*);  // Free a resource from the pool, only called by Deleter.
+    
   public:
     typedef std::unique_ptr<T, Deleter<T>> Ptr;
+    
     ObjectPool(size_t pool_size);
     Ptr getResource();
   };
