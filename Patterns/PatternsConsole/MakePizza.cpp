@@ -5,6 +5,8 @@
 #include "PatternsLib/Pizza/PizzaStoreV0.h"
 #include "PatternsLib/Pizza/NYPizzaStore.h"
 #include "PatternsLib/Pizza/ChicagoPizzaStore.h"
+#include "PatternsLib/Pizza/PizzaPrototypeFactory.h"
+
 
 #include <iostream>
 #include <memory>
@@ -29,5 +31,15 @@ namespace Patterns {
     pizza = chicago_store.orderPizza("cheese");
     std::cout << "Joel ordered a " << pizza->getName() << std::endl;
     std::cout << pizza->toString() << std::endl;
+
+    std::cout << "-- Prototype --\n";
+    auto cheese_pizza_prototype = factory.createPizza("cheese");
+    auto pepperoni_pizza_prototype = factory.createPizza("pepperoni");
+    PizzaPrototypeFactory cheese_pizza_factory(std::move(cheese_pizza_prototype));
+    PizzaPrototypeFactory pepperoni_pizza_factory(std::move(pepperoni_pizza_prototype));
+    auto test_cheese_pizza = cheese_pizza_factory.makePizza();
+    std::cout << "Cheese prototype factory produced " << test_cheese_pizza->getName() << std::endl;
+    auto test_pepperoni_pizza = pepperoni_pizza_factory.makePizza();
+    std::cout << "Pepperoni prototype factory produced " << test_pepperoni_pizza->getName() << std::endl;
   }
 }  // namspace Patterns

@@ -23,4 +23,9 @@ namespace Patterns {
   void PizzaV0::box() {
     std::cout << "Place pizza in official PizzaStore box\n";
   }
+
+  std::unique_ptr<PizzaV0> PizzaV0::clone() const {
+    return std::make_unique<PizzaV0>(*this);
+  }
+
 }  // namespace Patterns

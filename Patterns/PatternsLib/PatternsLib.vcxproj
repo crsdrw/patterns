@@ -83,6 +83,7 @@
     <ClCompile Include="Observer\CurrentConditionsDisplay.cpp" />
     <ClCompile Include="Observer\ForecastDisplay.cpp" />
     <ClCompile Include="Observer\Subject.cpp" />
+    <ClCompile Include="Pizza\PizzaPrototypeFactory.cpp" />
     <ClCompile Include="Pizza\PizzaV0.cpp" />
     <ClCompile Include="Pizza\CheesePizza.cpp" />
     <ClCompile Include="Pizza\ChicagoPizzaIngredientFactory.cpp" />
@@ -100,6 +101,7 @@
     <ClInclude Include="Builder\VacationBuilder.h" />
     <ClInclude Include="Builder\VacationDay.h" />
     <ClInclude Include="Builder\VacationPlanner.h" />
+    <ClInclude Include="Pizza\PizzaPrototypeFactory.h" />
     <ClInclude Include="Pizza\CheesePizzaV0.h" />
     <ClInclude Include="Decorator\Beverage.h" />
     <ClInclude Include="Decorator\CondimentDecorator.h" />

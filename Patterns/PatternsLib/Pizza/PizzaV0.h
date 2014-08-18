@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <vector>
+#include <memory>
 
 namespace Patterns {
 
@@ -20,6 +21,7 @@ namespace Patterns {
     virtual void box();
     void addTopping(std::string topping) { toppings_.emplace_back(std::move(topping)); }
     std::string getName() { return name_; }
+    virtual std::unique_ptr<PizzaV0> clone() const;
   };
 
 
