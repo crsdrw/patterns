@@ -253,6 +253,9 @@
     <ClInclude Include="MyString.h">
       <Filter>Utility</Filter>
     </ClInclude>
+    <ClInclude Include="Singleton\ThreadSafeSingleton.h">
+      <Filter>Singleton</Filter>
+    </ClInclude>
     <ClInclude Include="Pizza\PizzaPrototypeFactory.h">
       <Filter>Prototype</Filter>
     </ClInclude>
@@ -305,6 +308,9 @@
     </ClCompile>
     <ClCompile Include="MyString.cpp">
       <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Singleton\ThreadSafeSingleton.cpp">
+      <Filter>Singleton</Filter>
     </ClCompile>
     <ClCompile Include="Pizza\PizzaPrototypeFactory.cpp">
       <Filter>Prototype</Filter>

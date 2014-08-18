@@ -94,6 +94,7 @@
     <ClCompile Include="Pizza\Pizza.cpp" />
     <ClCompile Include="Pizza\PizzaStore.cpp" />
     <ClCompile Include="Pizza\SimplePizzaFactory.cpp" />
+    <ClCompile Include="Singleton\ThreadSafeSingleton.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Builder\AbstractBuilder.h" />
@@ -170,6 +171,7 @@
     <ClInclude Include="Strategy\RedheadDuck.h" />
     <ClInclude Include="Strategy\RubberDuck.h" />
     <ClInclude Include="Strategy\Squeak.h" />
+    <ClInclude Include="Singleton\ThreadSafeSingleton.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -10,9 +10,10 @@ int main() {
   //Patterns::playWithDucks();
   //Patterns::displayWeather();
   //Patterns::makeCoffee();
-  Patterns::makePizza();
+  //Patterns::makePizza();
   //Patterns::planVacation();
   //Patterns::usePool();
   //Patterns::performPool();
-  //Patterns::useSingleton();
+  Patterns::useSingleton();
+  Patterns::useThreadSafeSingleton();
 }
