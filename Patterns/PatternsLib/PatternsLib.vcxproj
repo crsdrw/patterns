@@ -77,8 +77,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Facade\Amplifier.cpp" />
     <ClCompile Include="Builder\TravelAgent.cpp" />
     <ClCompile Include="Builder\VacationBuilder.cpp" />
+    <ClCompile Include="Facade\CdPlayer.cpp" />
     <ClCompile Include="MyString.cpp" />
     <ClCompile Include="Observer\CurrentConditionsDisplay.cpp" />
     <ClCompile Include="Observer\ForecastDisplay.cpp" />
@@ -97,11 +99,13 @@
     <ClCompile Include="Singleton\ThreadSafeSingleton.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Facade\Amplifier.h" />
     <ClInclude Include="Builder\AbstractBuilder.h" />
     <ClInclude Include="Builder\TravelAgent.h" />
     <ClInclude Include="Builder\VacationBuilder.h" />
     <ClInclude Include="Builder\VacationDay.h" />
     <ClInclude Include="Builder\VacationPlanner.h" />
+    <ClInclude Include="Facade\CdPlayer.h" />
     <ClInclude Include="Pizza\PizzaPrototypeFactory.h" />
     <ClInclude Include="Pizza\CheesePizzaV0.h" />
     <ClInclude Include="Decorator\Beverage.h" />

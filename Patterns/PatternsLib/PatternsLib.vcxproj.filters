@@ -34,6 +34,9 @@
     <Filter Include="Prototype">
       <UniqueIdentifier>{d6792976-10fb-405a-ae03-0e3074e57c54}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Facade">
+      <UniqueIdentifier>{da649b94-1d7c-4bdf-befa-1b9b21a499b8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SimUDuck\Duck.h">
@@ -259,6 +262,10 @@
     <ClInclude Include="Pizza\PizzaPrototypeFactory.h">
       <Filter>Prototype</Filter>
     </ClInclude>
+    <ClInclude Include="Facade\Amplifier.h">
+      <Filter>Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="Facade\CdPlayer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Observer\CurrentConditionsDisplay.cpp">
@@ -315,5 +322,9 @@
     <ClCompile Include="Pizza\PizzaPrototypeFactory.cpp">
       <Filter>Prototype</Filter>
     </ClCompile>
+    <ClCompile Include="Facade\Amplifier.cpp">
+      <Filter>Facade</Filter>
+    </ClCompile>
+    <ClCompile Include="Facade\CdPlayer.cpp" />
   </ItemGroup>
 </Project>

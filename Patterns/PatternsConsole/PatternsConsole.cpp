@@ -5,6 +5,7 @@
 #include "PatternsConsole/PlanVacation.h"
 #include "PatternsConsole/UsePool.h"
 #include "PatternsConsole/UseSingleton.h"
+#include "PatternsConsole/PlayWithHomeTheater.h"
 
 int main() {
   //Patterns::playWithDucks();
@@ -14,6 +15,7 @@ int main() {
   //Patterns::planVacation();
   //Patterns::usePool();
   //Patterns::performPool();
-  Patterns::useSingleton();
-  Patterns::useThreadSafeSingleton();
+  //Patterns::useSingleton();
+  //Patterns::useThreadSafeSingleton();
+  Patterns::playWithHomeTheater();
 }
