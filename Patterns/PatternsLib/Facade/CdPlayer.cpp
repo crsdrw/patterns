@@ -1,11 +1,14 @@
 #include "PatternsLib/Facade/CdPlayer.h"
+#include "PatternsLib/Facade/Amplifier.h"
+
+#include <stdexcept>
+
 
 namespace Patterns {
 
   CdPlayer::CdPlayer(std::string description, std::weak_ptr<Amplifier> amplifier) : 
     description_(description),
     amplifier_(std::move(amplifier)) {
-
   }
 
   void CdPlayer::play(std::string title) {

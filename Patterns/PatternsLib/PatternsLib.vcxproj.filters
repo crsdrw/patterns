@@ -266,6 +266,15 @@
       <Filter>Facade</Filter>
     </ClInclude>
     <ClInclude Include="Facade\CdPlayer.h" />
+    <ClInclude Include="Facade\DvdPlayer.h" />
+    <ClInclude Include="Facade\Projector.h" />
+    <ClInclude Include="Facade\PopcornPopper.h" />
+    <ClInclude Include="Facade\Screen.h" />
+    <ClInclude Include="Facade\Tuner.h" />
+    <ClInclude Include="Facade\AudioDevice.h" />
+    <ClInclude Include="Facade\VideoDevice.h" />
+    <ClInclude Include="Facade\TheaterLights.h" />
+    <ClInclude Include="Facade\HomeTheaterFacade.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Observer\CurrentConditionsDisplay.cpp">
@@ -326,5 +335,9 @@
       <Filter>Facade</Filter>
     </ClCompile>
     <ClCompile Include="Facade\CdPlayer.cpp" />
+    <ClCompile Include="Facade\DvdPlayer.cpp" />
+    <ClCompile Include="Facade\Tuner.cpp" />
+    <ClCompile Include="Facade\Projector.cpp" />
+    <ClCompile Include="Facade\HomeTheaterFacade.cpp" />
   </ItemGroup>
 </Project>

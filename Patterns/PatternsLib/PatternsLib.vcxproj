@@ -81,6 +81,10 @@
     <ClCompile Include="Builder\TravelAgent.cpp" />
     <ClCompile Include="Builder\VacationBuilder.cpp" />
     <ClCompile Include="Facade\CdPlayer.cpp" />
+    <ClCompile Include="Facade\DvdPlayer.cpp" />
+    <ClCompile Include="Facade\HomeTheaterFacade.cpp" />
+    <ClCompile Include="Facade\Projector.cpp" />
+    <ClCompile Include="Facade\Tuner.cpp" />
     <ClCompile Include="MyString.cpp" />
     <ClCompile Include="Observer\CurrentConditionsDisplay.cpp" />
     <ClCompile Include="Observer\ForecastDisplay.cpp" />
@@ -105,7 +109,16 @@
     <ClInclude Include="Builder\VacationBuilder.h" />
     <ClInclude Include="Builder\VacationDay.h" />
     <ClInclude Include="Builder\VacationPlanner.h" />
+    <ClInclude Include="Facade\AudioDevice.h" />
     <ClInclude Include="Facade\CdPlayer.h" />
+    <ClInclude Include="Facade\DvdPlayer.h" />
+    <ClInclude Include="Facade\HomeTheaterFacade.h" />
+    <ClInclude Include="Facade\PopcornPopper.h" />
+    <ClInclude Include="Facade\Projector.h" />
+    <ClInclude Include="Facade\Screen.h" />
+    <ClInclude Include="Facade\TheaterLights.h" />
+    <ClInclude Include="Facade\Tuner.h" />
+    <ClInclude Include="Facade\VideoDevice.h" />
     <ClInclude Include="Pizza\PizzaPrototypeFactory.h" />
     <ClInclude Include="Pizza\CheesePizzaV0.h" />
     <ClInclude Include="Decorator\Beverage.h" />

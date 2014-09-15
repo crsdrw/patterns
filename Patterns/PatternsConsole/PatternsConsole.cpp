@@ -18,4 +18,5 @@ int main() {
   //Patterns::useSingleton();
   //Patterns::useThreadSafeSingleton();
   Patterns::playWithHomeTheater();
+  Patterns::playWithHomeTheaterFacade();
 }

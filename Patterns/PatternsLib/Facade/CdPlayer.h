@@ -1,14 +1,16 @@
 #pragma once
+
+#include "PatternsLib/Facade/AudioDevice.h"
+
 #include <memory>
 #include <string>
 #include <iostream>
-#include <stdexcept>
 
 namespace Patterns {
 
   class Amplifier;
 
-  class CdPlayer {
+  class CdPlayer : public AudioDevice {
   private:
     std::string description_;
     std::weak_ptr<Amplifier> amplifier_;
@@ -21,13 +23,13 @@ namespace Patterns {
     void eject() { title_ = "";  std::cout << description_ << " eject\n"; }
     void stop() { current_track_ = 0; std::cout << description_ << " stopped\n";}
     void pause() { std::cout << description_ << " paused \"" << title_ << "\"\n"; }
-    std::string getDescription() { return description_; }
+    std::string getDescription() const { return description_; }
     void play(std::string title);
     void play(int track);
   };
 
-  //std::ostream& operator<<(std::ostream& out, const CdPlayer& cd) {
-  //  return out << cd.getDescription();
-  //}
+  inline std::ostream& operator<<(std::ostream& out, const CdPlayer& cd) {
+    return out << cd.getDescription();
+  }
 
 }  // namespace Patterns

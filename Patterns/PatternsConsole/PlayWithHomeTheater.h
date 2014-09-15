@@ -2,4 +2,5 @@
 
 namespace Patterns {
   void playWithHomeTheater();
+  void playWithHomeTheaterFacade();
 }
