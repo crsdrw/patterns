@@ -6,6 +6,7 @@
 #include "PatternsConsole/UsePool.h"
 #include "PatternsConsole/UseSingleton.h"
 #include "PatternsConsole/PlayWithHomeTheater.h"
+#include "PatternsConsole/PlayWIthElements.h"
 
 int main() {
   //Patterns::playWithDucks();
@@ -17,6 +18,7 @@ int main() {
   //Patterns::performPool();
   //Patterns::useSingleton();
   //Patterns::useThreadSafeSingleton();
-  Patterns::playWithHomeTheater();
-  Patterns::playWithHomeTheaterFacade();
+  //Patterns::playWithHomeTheater();
+  //Patterns::playWithHomeTheaterFacade();
+  playWithElements();
 }

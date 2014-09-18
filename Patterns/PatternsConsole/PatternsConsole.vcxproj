@@ -86,6 +86,7 @@
     <ClCompile Include="PatternsConsole.cpp" />
     <ClCompile Include="PlanVacation.cpp" />
     <ClCompile Include="PlayWithDucks.cpp" />
+    <ClCompile Include="PlayWithElements.cpp" />
     <ClCompile Include="PlayWIthHomeTheater.cpp" />
     <ClCompile Include="UsePool.cpp" />
     <ClCompile Include="UseSingleton.cpp" />
@@ -101,6 +102,7 @@
     <ClInclude Include="MakePizza.h" />
     <ClInclude Include="PlanVacation.h" />
     <ClInclude Include="PlayWithDucks.h" />
+    <ClInclude Include="PlayWIthElements.h" />
     <ClInclude Include="PlayWithHomeTheater.h" />
     <ClInclude Include="UsePool.h" />
     <ClInclude Include="UseSingleton.h" />

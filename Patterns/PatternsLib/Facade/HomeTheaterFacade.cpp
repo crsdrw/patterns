@@ -21,7 +21,6 @@ namespace Patterns {
   }
 
   void HomeTheaterFacade::watchMovie(std::string movie) {
-    std::cout << 
   }
 
 }  // namespace Patterns
