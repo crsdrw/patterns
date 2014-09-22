@@ -14,10 +14,10 @@ namespace Patterns {
   private:
     std::string description_;
     int current_chapter_;
-    std::weak_ptr<Amplifier> amplifier_;
+    Amplifier* amplifier_;
     std::string movie_;
   public:
-    DvdPlayer(std::string description, std::weak_ptr<Amplifier> amplifier);
+    DvdPlayer(std::string description, Amplifier* amplifier);
     void on() { std::cout << description_ << " on\n"; }
     void off() { std::cout << description_ << " off\n"; }
     void eject() { movie_ = "";  std::cout << description_ << " eject\n"; }

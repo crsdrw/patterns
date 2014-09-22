@@ -5,9 +5,9 @@
 
 namespace Patterns {
 
-  DvdPlayer::DvdPlayer(std::string description, std::weak_ptr<Amplifier> amplifier) :
+  DvdPlayer::DvdPlayer(std::string description, Amplifier* amplifier) :
     description_(description),
-    amplifier_(std::move(amplifier)) {
+    amplifier_(amplifier) {
   }
 
   void DvdPlayer::play(std::string movie) {

@@ -13,10 +13,10 @@ namespace Patterns {
   class Tuner : public AudioDevice {
   private:
     std::string description_;
-    std::weak_ptr<Amplifier> amplifier_;
+    Amplifier* amplifier_;
     double frequency_;
   public:
-    Tuner(std::string description, std::weak_ptr<Amplifier> amplifier);
+    Tuner(std::string description, Amplifier* amplifier);
     void on() { std::cout << description_ << " on\n"; }
     void off() { std::cout << description_ << " off\n"; }
     void setFrequency(double frequency); 

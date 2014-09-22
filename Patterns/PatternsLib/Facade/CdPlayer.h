@@ -13,11 +13,11 @@ namespace Patterns {
   class CdPlayer : public AudioDevice {
   private:
     std::string description_;
-    std::weak_ptr<Amplifier> amplifier_;
+    Amplifier* amplifier_;
     int current_track_;
     std::string title_;
   public:
-    CdPlayer(std::string description, std::weak_ptr<Amplifier> amplifier);
+    CdPlayer(std::string description, Amplifier* amplifier);
     void on() { std::cout << description_ << " on\n"; }
     void off() { std::cout << description_ << " off\n"; }
     void eject() { title_ = "";  std::cout << description_ << " eject\n"; }

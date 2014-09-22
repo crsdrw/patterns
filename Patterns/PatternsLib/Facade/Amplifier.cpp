@@ -3,8 +3,8 @@
 
 namespace Patterns {
 
-  void Amplifier::setInput(std::weak_ptr<AudioDevice> input) {
-    input_ = std::move(input);
+  void Amplifier::setInput(AudioDevice* input) {
+    input_ = input;
   }
 
 }  // namespace Patterns

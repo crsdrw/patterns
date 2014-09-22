@@ -3,8 +3,8 @@
 
 namespace Patterns {
 
-  Tuner::Tuner(std::string description, std::weak_ptr<Amplifier> amplifier) : 
-    description_(std::move(description)), amplifier_(std::move(amplifier)), frequency_(0.0) {
+  Tuner::Tuner(std::string description, Amplifier* amplifier) : 
+    description_(std::move(description)), amplifier_(amplifier), frequency_(0.0) {
   
   }
 

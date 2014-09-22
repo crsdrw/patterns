@@ -15,25 +15,32 @@ namespace Patterns {
 
   class HomeTheaterFacade {
   private:
-    std::weak_ptr<Amplifier> amp_;
-    std::weak_ptr<Tuner> tuner_;
-    std::weak_ptr<DvdPlayer> dvd_;
-    std::weak_ptr<CdPlayer> cd_;
-    std::weak_ptr<Projector> projector_;
-    std::weak_ptr<TheaterLights> lights_;
-    std::weak_ptr<Screen> screen_;
-    std::weak_ptr<PopcornPopper> popper_;
+
+    // Perhaps std::weak_ptr for the subsystems would more appropriate in practice?
+    Amplifier*     amp_;
+    Tuner*         tuner_;
+    DvdPlayer*     dvd_;
+    CdPlayer*      cd_;
+    Projector*     projector_;
+    TheaterLights* lights_;
+    Screen*        screen_;
+    PopcornPopper* popper_;
+
   public:
-    HomeTheaterFacade(std::weak_ptr<Amplifier> amp,
-                      std::weak_ptr<Tuner> tuner,
-                      std::weak_ptr<DvdPlayer> dvd,
-                      std::weak_ptr<CdPlayer> cd,
-                      std::weak_ptr<Projector> projector,
-                      std::weak_ptr<TheaterLights> lights,
-                      std::weak_ptr<Screen> screen,
-                      std::weak_ptr<PopcornPopper> popper);
+    HomeTheaterFacade(Amplifier* amp,
+                      Tuner* tuner,
+                      DvdPlayer* dvd,
+                      CdPlayer* cd,
+                      Projector* projector,
+                      TheaterLights* lights,
+                      Screen* screen,
+                      PopcornPopper* popper);  // Perhaps use setters instead of constructor?
     void watchMovie(std::string movie);
     void endMovie();
+    void listenToCd(std::string title);
+    void endCd();
+    void listenToRadio(double frequency);
+    void endRadio();
   };
 
 }  // namespace Patterns

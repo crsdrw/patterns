@@ -6,9 +6,9 @@
 
 namespace Patterns {
 
-  CdPlayer::CdPlayer(std::string description, std::weak_ptr<Amplifier> amplifier) : 
+  CdPlayer::CdPlayer(std::string description, Amplifier* amplifier) : 
     description_(description),
-    amplifier_(std::move(amplifier)) {
+    amplifier_(amplifier) {
   }
 
   void CdPlayer::play(std::string title) {

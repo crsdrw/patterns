@@ -3,8 +3,8 @@
 
 namespace Patterns {
 
-  void Projector::setInput(std::weak_ptr<VideoDevice> input) {
-    input_ = std::move(input);
+  void Projector::setInput(VideoDevice* input) {
+    input_ = input;
   }
 
 }  // namespace Patterns
