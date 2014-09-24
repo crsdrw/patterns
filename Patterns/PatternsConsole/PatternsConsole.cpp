@@ -18,7 +18,7 @@ int main() {
   //Patterns::performPool();
   //Patterns::useSingleton();
   //Patterns::useThreadSafeSingleton();
-  //Patterns::playWithHomeTheater();
+  Patterns::playWithHomeTheater();
   //Patterns::playWithHomeTheaterFacade();
-  playWithElements();
+  //playWithElements();
 }

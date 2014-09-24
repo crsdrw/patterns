@@ -20,9 +20,4 @@ namespace Patterns {
     void setInput(VideoDevice* input);
     std::string getDescription() const { return description_; }
   };
-
-  inline std::ostream& operator<<(std::ostream& out, const Projector& cd) {
-    return out << cd.getDescription();
-  }
-
 }  // namespace Patterns

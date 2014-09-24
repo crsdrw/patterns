@@ -13,8 +13,4 @@ namespace Patterns {
     void off() { std::cout << description_ << " off\n"; }
     void pop() { std::cout << description_ << " popping popcorn!\n"; }
   };
-
-  inline std::ostream& operator<<(std::ostream& out, const PopcornPopper& pp) {
-    return out << pp.getDescription();
-  }
 }  // namespace Patterns

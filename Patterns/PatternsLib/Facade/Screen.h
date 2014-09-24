@@ -12,8 +12,4 @@ namespace Patterns {
     void up() { std::cout << description_ << " up\n"; }
     void down() { std::cout << description_ << " down\n"; }
   };
-
-  inline std::ostream& operator<<(std::ostream& out, const Screen& screen) {
-    return out << screen.getDescription();
-  }
 }

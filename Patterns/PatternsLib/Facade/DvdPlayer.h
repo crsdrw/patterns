@@ -27,9 +27,4 @@ namespace Patterns {
     void play(int chapter);
     std::string getDescription() const { return description_; }
   };
-
-  inline std::ostream& operator<<(std::ostream& out, const DvdPlayer& dvd) {
-    return out << dvd.getDescription();
-  }
-
 }  // namespace Patterns

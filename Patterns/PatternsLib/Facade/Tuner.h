@@ -26,9 +26,4 @@ namespace Patterns {
     void play(std::string title);
     void play(int track);
   };
-
-  inline std::ostream& operator<<(std::ostream& out, const Tuner& tuner) {
-    return out << tuner.getDescription();
-  }
-
 }  // namespace Patterns

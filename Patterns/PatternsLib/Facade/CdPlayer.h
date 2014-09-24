@@ -27,9 +27,4 @@ namespace Patterns {
     void play(std::string title);
     void play(int track);
   };
-
-  inline std::ostream& operator<<(std::ostream& out, const CdPlayer& cd) {
-    return out << cd.getDescription();
-  }
-
 }  // namespace Patterns

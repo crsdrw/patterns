@@ -13,8 +13,4 @@ namespace Patterns {
     void off() { std::cout << description_ << " off\n"; }
     void dim(int level) { std::cout << description_ << " dimming to " << level << "%\n"; }
   };
-
-  inline std::ostream& operator<<(std::ostream& out, const TheaterLights& lights) {
-    return out << lights.getDescription();
-  }
 }

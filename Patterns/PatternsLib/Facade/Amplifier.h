@@ -21,9 +21,4 @@ namespace Patterns {
     void setInput(AudioDevice* input);
     std::string getDescription() const { return description_; }
   };
-
-  inline std::ostream& operator<<(std::ostream& out, const Amplifier& amplifier) {
-    return out << amplifier.getDescription();
-  }
-
 }  // namespace Patterns
